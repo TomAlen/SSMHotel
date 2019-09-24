@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zwhzzz.Mapper.BookOrderDao">
+  <resultMap id="BaseResultMap" type="com.zwhzzz.Pojo.BookOrder">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="accountId" jdbcType="INTEGER" property="accountid" />
+    <result column="roomTypeId" jdbcType="INTEGER" property="roomtypeid" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="realName" jdbcType="VARCHAR" property="realname" />
+    <result column="idCard" jdbcType="VARCHAR" property="idcard" />
+    <result column="mobile" jdbcType="VARCHAR" property="mobile" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="arriveTime" jdbcType="VARCHAR" property="arrivetime" />
+    <result column="leaveTime" jdbcType="VARCHAR" property="leavetime" />
+    <result column="createTime" jdbcType="TIMESTAMP" property="createtime" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="price" jdbcType="REAL" property="price" />
+    <result column="cuStatus" jdbcType="INTEGER" property="custatus" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, accountId, roomTypeId, `name`, realName, idCard, mobile, `status`, arriveTime, 
+    leaveTime, createTime, remark, price, cuStatus
+  </sql>
+  <select id="selectByExample" parameterType="com.zwhzzz.Pojo.BookOrderExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from book_order
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+    <if test="limit != null">
+      <if test="offset != null">
+        limit ${offset}, ${limit}
+      </if>
+      <if test="offset == null">
+        limit ${limit}
+      </if>
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from book_order
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from book_order
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.zwhzzz.Pojo.BookOrderExample">
+    delete from book_order
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.zwhzzz.Pojo.BookOrder" useGeneratedKeys="true">
+    insert into book_order (accountId, roomTypeId, `name`, 
+      realName, idCard, mobile, 
+      `status`, arriveTime, leaveTime, 
+      createTime, remark, price, 
+      cuStatus)
+    values (#{accountid,jdbcType=INTEGER}, #{roomtypeid,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, 
+      #{realname,jdbcType=VARCHAR}, #{idcard,jdbcType=VARCHAR}, #{mobile,jdbcType=VARCHAR}, 
+      #{status,jdbcType=INTEGER}, #{arrivetime,jdbcType=VARCHAR}, #{leavetime,jdbcType=VARCHAR}, 
+      #{createtime,jdbcType=TIMESTAMP}, #{remark,jdbcType=VARCHAR}, #{price,jdbcType=REAL}, 
+      #{custatus,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.zwhzzz.Pojo.BookOrder" useGeneratedKeys="true">
+    insert into book_order
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="accountid != null">
+        accountId,
+      </if>
+      <if test="roomtypeid != null">
+        roomTypeId,
+      </if>
+      <if test="name != null">
+        `name`,
+      </if>
+      <if test="realname != null">
+        realName,
+      </if>
+      <if test="idcard != null">
+        idCard,
+      </if>
+      <if test="mobile != null">
+        mobile,
+      </if>
+      <if test="status != null">
+        `status`,
+      </if>
+      <if test="arrivetime != null">
+        arriveTime,
+      </if>
+      <if test="leavetime != null">
+        leaveTime,
+      </if>
+      <if test="createtime != null">
+        createTime,
+      </if>
+      <if test="remark != null">
+        remark,
+      </if>
+      <if test="price != null">
+        price,
+      </if>
+      <if test="custatus != null">
+        cuStatus,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="accountid != null">
+        #{accountid,jdbcType=INTEGER},
+      </if>
+      <if test="roomtypeid != null">
+        #{roomtypeid,jdbcType=INTEGER},
+      </if>
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="realname != null">
+        #{realname,jdbcType=VARCHAR},
+      </if>
+      <if test="idcard != null">
+        #{idcard,jdbcType=VARCHAR},
+      </if>
+      <if test="mobile != null">
+        #{mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="arrivetime != null">
+        #{arrivetime,jdbcType=VARCHAR},
+      </if>
+      <if test="leavetime != null">
+        #{leavetime,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null">
+        #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="remark != null">
+        #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="price != null">
+        #{price,jdbcType=REAL},
+      </if>
+      <if test="custatus != null">
+        #{custatus,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.zwhzzz.Pojo.BookOrderExample" resultType="java.lang.Long">
+    select count(*) from book_order
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update book_order
+    <set>
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.accountid != null">
+        accountId = #{record.accountid,jdbcType=INTEGER},
+      </if>
+      <if test="record.roomtypeid != null">
+        roomTypeId = #{record.roomtypeid,jdbcType=INTEGER},
+      </if>
+      <if test="record.name != null">
+        `name` = #{record.name,jdbcType=VARCHAR},
+      </if>
+      <if test="record.realname != null">
+        realName = #{record.realname,jdbcType=VARCHAR},
+      </if>
+      <if test="record.idcard != null">
+        idCard = #{record.idcard,jdbcType=VARCHAR},
+      </if>
+      <if test="record.mobile != null">
+        mobile = #{record.mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="record.status != null">
+        `status` = #{record.status,jdbcType=INTEGER},
+      </if>
+      <if test="record.arrivetime != null">
+        arriveTime = #{record.arrivetime,jdbcType=VARCHAR},
+      </if>
+      <if test="record.leavetime != null">
+        leaveTime = #{record.leavetime,jdbcType=VARCHAR},
+      </if>
+      <if test="record.createtime != null">
+        createTime = #{record.createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.remark != null">
+        remark = #{record.remark,jdbcType=VARCHAR},
+      </if>
+      <if test="record.price != null">
+        price = #{record.price,jdbcType=REAL},
+      </if>
+      <if test="record.custatus != null">
+        cuStatus = #{record.custatus,jdbcType=INTEGER},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update book_order
+    set id = #{record.id,jdbcType=INTEGER},
+      accountId = #{record.accountid,jdbcType=INTEGER},
+      roomTypeId = #{record.roomtypeid,jdbcType=INTEGER},
+      `name` = #{record.name,jdbcType=VARCHAR},
+      realName = #{record.realname,jdbcType=VARCHAR},
+      idCard = #{record.idcard,jdbcType=VARCHAR},
+      mobile = #{record.mobile,jdbcType=VARCHAR},
+      `status` = #{record.status,jdbcType=INTEGER},
+      arriveTime = #{record.arrivetime,jdbcType=VARCHAR},
+      leaveTime = #{record.leavetime,jdbcType=VARCHAR},
+      createTime = #{record.createtime,jdbcType=TIMESTAMP},
+      remark = #{record.remark,jdbcType=VARCHAR},
+      price = #{record.price,jdbcType=REAL},
+      cuStatus = #{record.custatus,jdbcType=INTEGER}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.zwhzzz.Pojo.BookOrder">
+    update book_order
+    <set>
+      <if test="accountid != null">
+        accountId = #{accountid,jdbcType=INTEGER},
+      </if>
+      <if test="roomtypeid != null">
+        roomTypeId = #{roomtypeid,jdbcType=INTEGER},
+      </if>
+      <if test="name != null">
+        `name` = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="realname != null">
+        realName = #{realname,jdbcType=VARCHAR},
+      </if>
+      <if test="idcard != null">
+        idCard = #{idcard,jdbcType=VARCHAR},
+      </if>
+      <if test="mobile != null">
+        mobile = #{mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        `status` = #{status,jdbcType=INTEGER},
+      </if>
+      <if test="arrivetime != null">
+        arriveTime = #{arrivetime,jdbcType=VARCHAR},
+      </if>
+      <if test="leavetime != null">
+        leaveTime = #{leavetime,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null">
+        createTime = #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="remark != null">
+        remark = #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="price != null">
+        price = #{price,jdbcType=REAL},
+      </if>
+      <if test="custatus != null">
+        cuStatus = #{custatus,jdbcType=INTEGER},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.zwhzzz.Pojo.BookOrder">
+    update book_order
+    set accountId = #{accountid,jdbcType=INTEGER},
+      roomTypeId = #{roomtypeid,jdbcType=INTEGER},
+      `name` = #{name,jdbcType=VARCHAR},
+      realName = #{realname,jdbcType=VARCHAR},
+      idCard = #{idcard,jdbcType=VARCHAR},
+      mobile = #{mobile,jdbcType=VARCHAR},
+      `status` = #{status,jdbcType=INTEGER},
+      arriveTime = #{arrivetime,jdbcType=VARCHAR},
+      leaveTime = #{leavetime,jdbcType=VARCHAR},
+      createTime = #{createtime,jdbcType=TIMESTAMP},
+      remark = #{remark,jdbcType=VARCHAR},
+      price = #{price,jdbcType=REAL},
+      cuStatus = #{custatus,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

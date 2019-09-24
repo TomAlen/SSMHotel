@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zwhzzz.Mapper.CheckinnDao">
+  <resultMap id="BaseResultMap" type="com.zwhzzz.Pojo.Checkinn">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="roomId" jdbcType="INTEGER" property="roomid" />
+    <result column="checkinPrice" jdbcType="REAL" property="checkinprice" />
+    <result column="roomTypeId" jdbcType="INTEGER" property="roomtypeid" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="realName" jdbcType="VARCHAR" property="realname" />
+    <result column="idCard" jdbcType="VARCHAR" property="idcard" />
+    <result column="mobile" jdbcType="VARCHAR" property="mobile" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="arriveTime" jdbcType="VARCHAR" property="arrivetime" />
+    <result column="leaveTime" jdbcType="VARCHAR" property="leavetime" />
+    <result column="createTime" jdbcType="TIMESTAMP" property="createtime" />
+    <result column="bookOrderId" jdbcType="INTEGER" property="bookorderid" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, roomId, checkinPrice, roomTypeId, `name`, realName, idCard, mobile, `status`, 
+    arriveTime, leaveTime, createTime, bookOrderId, remark
+  </sql>
+  <select id="selectByExample" parameterType="com.zwhzzz.Pojo.CheckinnExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from checkinn
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+    <if test="limit != null">
+      <if test="offset != null">
+        limit ${offset}, ${limit}
+      </if>
+      <if test="offset == null">
+        limit ${limit}
+      </if>
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from checkinn
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from checkinn
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.zwhzzz.Pojo.CheckinnExample">
+    delete from checkinn
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.zwhzzz.Pojo.Checkinn" useGeneratedKeys="true">
+    insert into checkinn (roomId, checkinPrice, roomTypeId, 
+      `name`, realName, idCard, 
+      mobile, `status`, arriveTime, 
+      leaveTime, createTime, bookOrderId, 
+      remark)
+    values (#{roomid,jdbcType=INTEGER}, #{checkinprice,jdbcType=REAL}, #{roomtypeid,jdbcType=INTEGER}, 
+      #{name,jdbcType=VARCHAR}, #{realname,jdbcType=VARCHAR}, #{idcard,jdbcType=VARCHAR}, 
+      #{mobile,jdbcType=VARCHAR}, #{status,jdbcType=INTEGER}, #{arrivetime,jdbcType=VARCHAR}, 
+      #{leavetime,jdbcType=VARCHAR}, #{createtime,jdbcType=TIMESTAMP}, #{bookorderid,jdbcType=INTEGER}, 
+      #{remark,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.zwhzzz.Pojo.Checkinn" useGeneratedKeys="true">
+    insert into checkinn
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="roomid != null">
+        roomId,
+      </if>
+      <if test="checkinprice != null">
+        checkinPrice,
+      </if>
+      <if test="roomtypeid != null">
+        roomTypeId,
+      </if>
+      <if test="name != null">
+        `name`,
+      </if>
+      <if test="realname != null">
+        realName,
+      </if>
+      <if test="idcard != null">
+        idCard,
+      </if>
+      <if test="mobile != null">
+        mobile,
+      </if>
+      <if test="status != null">
+        `status`,
+      </if>
+      <if test="arrivetime != null">
+        arriveTime,
+      </if>
+      <if test="leavetime != null">
+        leaveTime,
+      </if>
+      <if test="createtime != null">
+        createTime,
+      </if>
+      <if test="bookorderid != null">
+        bookOrderId,
+      </if>
+      <if test="remark != null">
+        remark,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="roomid != null">
+        #{roomid,jdbcType=INTEGER},
+      </if>
+      <if test="checkinprice != null">
+        #{checkinprice,jdbcType=REAL},
+      </if>
+      <if test="roomtypeid != null">
+        #{roomtypeid,jdbcType=INTEGER},
+      </if>
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="realname != null">
+        #{realname,jdbcType=VARCHAR},
+      </if>
+      <if test="idcard != null">
+        #{idcard,jdbcType=VARCHAR},
+      </if>
+      <if test="mobile != null">
+        #{mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="arrivetime != null">
+        #{arrivetime,jdbcType=VARCHAR},
+      </if>
+      <if test="leavetime != null">
+        #{leavetime,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null">
+        #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="bookorderid != null">
+        #{bookorderid,jdbcType=INTEGER},
+      </if>
+      <if test="remark != null">
+        #{remark,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.zwhzzz.Pojo.CheckinnExample" resultType="java.lang.Long">
+    select count(*) from checkinn
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update checkinn
+    <set>
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.roomid != null">
+        roomId = #{record.roomid,jdbcType=INTEGER},
+      </if>
+      <if test="record.checkinprice != null">
+        checkinPrice = #{record.checkinprice,jdbcType=REAL},
+      </if>
+      <if test="record.roomtypeid != null">
+        roomTypeId = #{record.roomtypeid,jdbcType=INTEGER},
+      </if>
+      <if test="record.name != null">
+        `name` = #{record.name,jdbcType=VARCHAR},
+      </if>
+      <if test="record.realname != null">
+        realName = #{record.realname,jdbcType=VARCHAR},
+      </if>
+      <if test="record.idcard != null">
+        idCard = #{record.idcard,jdbcType=VARCHAR},
+      </if>
+      <if test="record.mobile != null">
+        mobile = #{record.mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="record.status != null">
+        `status` = #{record.status,jdbcType=INTEGER},
+      </if>
+      <if test="record.arrivetime != null">
+        arriveTime = #{record.arrivetime,jdbcType=VARCHAR},
+      </if>
+      <if test="record.leavetime != null">
+        leaveTime = #{record.leavetime,jdbcType=VARCHAR},
+      </if>
+      <if test="record.createtime != null">
+        createTime = #{record.createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.bookorderid != null">
+        bookOrderId = #{record.bookorderid,jdbcType=INTEGER},
+      </if>
+      <if test="record.remark != null">
+        remark = #{record.remark,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update checkinn
+    set id = #{record.id,jdbcType=INTEGER},
+      roomId = #{record.roomid,jdbcType=INTEGER},
+      checkinPrice = #{record.checkinprice,jdbcType=REAL},
+      roomTypeId = #{record.roomtypeid,jdbcType=INTEGER},
+      `name` = #{record.name,jdbcType=VARCHAR},
+      realName = #{record.realname,jdbcType=VARCHAR},
+      idCard = #{record.idcard,jdbcType=VARCHAR},
+      mobile = #{record.mobile,jdbcType=VARCHAR},
+      `status` = #{record.status,jdbcType=INTEGER},
+      arriveTime = #{record.arrivetime,jdbcType=VARCHAR},
+      leaveTime = #{record.leavetime,jdbcType=VARCHAR},
+      createTime = #{record.createtime,jdbcType=TIMESTAMP},
+      bookOrderId = #{record.bookorderid,jdbcType=INTEGER},
+      remark = #{record.remark,jdbcType=VARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.zwhzzz.Pojo.Checkinn">
+    update checkinn
+    <set>
+      <if test="roomid != null">
+        roomId = #{roomid,jdbcType=INTEGER},
+      </if>
+      <if test="checkinprice != null">
+        checkinPrice = #{checkinprice,jdbcType=REAL},
+      </if>
+      <if test="roomtypeid != null">
+        roomTypeId = #{roomtypeid,jdbcType=INTEGER},
+      </if>
+      <if test="name != null">
+        `name` = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="realname != null">
+        realName = #{realname,jdbcType=VARCHAR},
+      </if>
+      <if test="idcard != null">
+        idCard = #{idcard,jdbcType=VARCHAR},
+      </if>
+      <if test="mobile != null">
+        mobile = #{mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        `status` = #{status,jdbcType=INTEGER},
+      </if>
+      <if test="arrivetime != null">
+        arriveTime = #{arrivetime,jdbcType=VARCHAR},
+      </if>
+      <if test="leavetime != null">
+        leaveTime = #{leavetime,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null">
+        createTime = #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="bookorderid != null">
+        bookOrderId = #{bookorderid,jdbcType=INTEGER},
+      </if>
+      <if test="remark != null">
+        remark = #{remark,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.zwhzzz.Pojo.Checkinn">
+    update checkinn
+    set roomId = #{roomid,jdbcType=INTEGER},
+      checkinPrice = #{checkinprice,jdbcType=REAL},
+      roomTypeId = #{roomtypeid,jdbcType=INTEGER},
+      `name` = #{name,jdbcType=VARCHAR},
+      realName = #{realname,jdbcType=VARCHAR},
+      idCard = #{idcard,jdbcType=VARCHAR},
+      mobile = #{mobile,jdbcType=VARCHAR},
+      `status` = #{status,jdbcType=INTEGER},
+      arriveTime = #{arrivetime,jdbcType=VARCHAR},
+      leaveTime = #{leavetime,jdbcType=VARCHAR},
+      createTime = #{createtime,jdbcType=TIMESTAMP},
+      bookOrderId = #{bookorderid,jdbcType=INTEGER},
+      remark = #{remark,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>
