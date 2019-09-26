@@ -76,7 +76,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, accountId, roomTypeId, `name`, realName, idCard, mobile, `status`, arriveTime, 
+    id, accountId, roomTypeId, name, realName, idCard, mobile, status, arriveTime,
     leaveTime, createTime, remark, price, cuStatus
   </sql>
   <select id="selectByExample" parameterType="com.zwhzzz.Pojo.BookOrderExample" resultMap="BaseResultMap">
@@ -118,9 +118,9 @@
     </if>
   </delete>
   <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.zwhzzz.Pojo.BookOrder" useGeneratedKeys="true">
-    insert into book_order (accountId, roomTypeId, `name`, 
+    insert into book_order (accountId, roomTypeId, name,
       realName, idCard, mobile, 
-      `status`, arriveTime, leaveTime, 
+      status, arriveTime, leaveTime,
       createTime, remark, price, 
       cuStatus)
     values (#{accountid,jdbcType=INTEGER}, #{roomtypeid,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, 
@@ -139,7 +139,7 @@
         roomTypeId,
       </if>
       <if test="name != null">
-        `name`,
+        name,
       </if>
       <if test="realname != null">
         realName,
@@ -151,7 +151,7 @@
         mobile,
       </if>
       <if test="status != null">
-        `status`,
+        status,
       </if>
       <if test="arrivetime != null">
         arriveTime,
@@ -233,7 +233,7 @@
         roomTypeId = #{record.roomtypeid,jdbcType=INTEGER},
       </if>
       <if test="record.name != null">
-        `name` = #{record.name,jdbcType=VARCHAR},
+        name = #{record.name,jdbcType=VARCHAR},
       </if>
       <if test="record.realname != null">
         realName = #{record.realname,jdbcType=VARCHAR},
@@ -245,7 +245,7 @@
         mobile = #{record.mobile,jdbcType=VARCHAR},
       </if>
       <if test="record.status != null">
-        `status` = #{record.status,jdbcType=INTEGER},
+        status = #{record.status,jdbcType=INTEGER},
       </if>
       <if test="record.arrivetime != null">
         arriveTime = #{record.arrivetime,jdbcType=VARCHAR},
@@ -275,11 +275,11 @@
     set id = #{record.id,jdbcType=INTEGER},
       accountId = #{record.accountid,jdbcType=INTEGER},
       roomTypeId = #{record.roomtypeid,jdbcType=INTEGER},
-      `name` = #{record.name,jdbcType=VARCHAR},
+      name = #{record.name,jdbcType=VARCHAR},
       realName = #{record.realname,jdbcType=VARCHAR},
       idCard = #{record.idcard,jdbcType=VARCHAR},
       mobile = #{record.mobile,jdbcType=VARCHAR},
-      `status` = #{record.status,jdbcType=INTEGER},
+      status = #{record.status,jdbcType=INTEGER},
       arriveTime = #{record.arrivetime,jdbcType=VARCHAR},
       leaveTime = #{record.leavetime,jdbcType=VARCHAR},
       createTime = #{record.createtime,jdbcType=TIMESTAMP},
@@ -300,7 +300,7 @@
         roomTypeId = #{roomtypeid,jdbcType=INTEGER},
       </if>
       <if test="name != null">
-        `name` = #{name,jdbcType=VARCHAR},
+        name = #{name,jdbcType=VARCHAR},
       </if>
       <if test="realname != null">
         realName = #{realname,jdbcType=VARCHAR},
@@ -312,7 +312,7 @@
         mobile = #{mobile,jdbcType=VARCHAR},
       </if>
       <if test="status != null">
-        `status` = #{status,jdbcType=INTEGER},
+        status = #{status,jdbcType=INTEGER},
       </if>
       <if test="arrivetime != null">
         arriveTime = #{arrivetime,jdbcType=VARCHAR},
@@ -339,11 +339,11 @@
     update book_order
     set accountId = #{accountid,jdbcType=INTEGER},
       roomTypeId = #{roomtypeid,jdbcType=INTEGER},
-      `name` = #{name,jdbcType=VARCHAR},
+      name = #{name,jdbcType=VARCHAR},
       realName = #{realname,jdbcType=VARCHAR},
       idCard = #{idcard,jdbcType=VARCHAR},
       mobile = #{mobile,jdbcType=VARCHAR},
-      `status` = #{status,jdbcType=INTEGER},
+      status = #{status,jdbcType=INTEGER},
       arriveTime = #{arrivetime,jdbcType=VARCHAR},
       leaveTime = #{leavetime,jdbcType=VARCHAR},
       createTime = #{createtime,jdbcType=TIMESTAMP},
@@ -352,4 +352,53 @@
       cuStatus = #{custatus,jdbcType=INTEGER}
     where id = #{id,jdbcType=INTEGER}
   </update>
+
+  <select id="getBookOrderList" parameterType="com.zwhzzz.DTO.BookOrderDTO" resultType="BookOrder">
+    select * from book_order where 1 = 1
+    <if test="name != null">
+      and name like  '%${name}%'
+    </if>
+    <if test="idCard  != null">
+      and idCard like  '%${idCard}%'
+    </if>
+    <if test="mobile != null">
+      and mobile like  '%${mobile}%'
+    </if>
+    <if test="accountId != null">
+      and accountId = #{accountId}
+    </if>
+    <if test="roomTypeId != null">
+      and roomTypeId = #{roomTypeId}
+    </if>
+    <if test="status != null">
+      and status = #{status}
+    </if>
+  </select>
+
+  <select id="getList" parameterType="Map" resultType="BookOrder">
+    select * from book_order where 1 = 1
+    <if test="name != null">
+      and name like  '%${name}%'
+    </if>
+    <if test="idCard  != null">
+      and idCard like  '%${idCard}%'
+    </if>
+    <if test="mobile != null">
+      and mobile like  '%${mobile}%'
+    </if>
+    <if test="accountId != null">
+      and accountId = #{accountId}
+    </if>
+    <if test="roomTypeId != null">
+      and roomTypeId = #{roomTypeId}
+    </if>
+    <if test="status != null">
+      and status = #{status}
+    </if>
+  </select>
+
+
+
+
+
 </mapper>

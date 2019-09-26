@@ -53,7 +53,7 @@
             </tr>
             <tr>
                 <td align="right">身份证号:</td>
-                <td><input type="text" id="add-idCard" name="idCard" class="wu-text easyui-validatebox"  /></td>
+                <td><input type="text" id="add-idCard" name="idcard" class="wu-text easyui-validatebox"  /></td>
             </tr>
             <tr>
                 <td align="right">手机号码:</td>
@@ -105,7 +105,7 @@
             </tr>
             <tr>
                 <td align="right">身份证号:</td>
-                <td><input type="text" id="edit-idCard" name="idCard" class="wu-text easyui-validatebox"  /></td>
+                <td><input type="text" id="edit-idCard" name="idcard" class="wu-text easyui-validatebox"  /></td>
             </tr>
             <tr>
                 <td align="right">手机号码:</td>
@@ -333,7 +333,7 @@
             	$("#edit-name").val(item.name);
             	$("#edit-password").val(item.password);
             	$("#edit-realName").val(item.realname);
-            	$("#edit-idCard").val(item.idCard);
+            	$("#edit-idCard").val(item.idcard);
             	$("#edit-mobile").val(item.mobile);
             	$("#edit-status").combobox('setValue',item.status);
             	$("#edit-address").val(item.address);
@@ -406,7 +406,7 @@
 			{ field:'name',title:'名称',width:100,sortable:true},
 			{ field:'password',title:'密码',width:100,sortable:true},
 			{ field:'realname',title:'真实姓名',width:100,sortable:true},
-			{ field:'idCard',title:'身份证号',width:100,sortable:true},
+			{ field:'idcard',title:'身份证号',width:100,sortable:true},
 			{ field:'mobile',title:'手机号',width:100,sortable:true},
 			{ field:'address',title:'地址',width:100,sortable:true},
 			{ field:'status',title:'状态',width:100,formatter:function(value,row,index){

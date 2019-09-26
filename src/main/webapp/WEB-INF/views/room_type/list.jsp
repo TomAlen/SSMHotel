@@ -46,15 +46,15 @@
             </tr>
             <tr>
                 <td align="right">可住人数:</td>
-                <td><input type="text" id="add-liveNum" name="liveNum" class="wu-text easyui-validatebox" data-options="required:true, missingMessage:'请填写房间类型可住人数'" /></td>
+                <td><input type="text" id="add-liveNum" name="livenum" class="wu-text easyui-validatebox" data-options="required:true, missingMessage:'请填写房间类型可住人数'" /></td>
             </tr>
             <tr>
                 <td align="right">床位数:</td>
-                <td><input type="text" id="add-bedNum" name="bedNum" class="wu-text easyui-validatebox" data-options="required:true, missingMessage:'请填写房间类型床位数'" /></td>
+                <td><input type="text" id="add-bedNum" name="bednum" class="wu-text easyui-validatebox" data-options="required:true, missingMessage:'请填写房间类型床位数'" /></td>
             </tr>
             <tr>
                 <td align="right">房间数:</td>
-                <td><input type="text" id="add-roomNum" name="roomNum" class="wu-text easyui-validatebox" data-options="required:true, missingMessage:'请填写房间类型房间数'" /></td>
+                <td><input type="text" id="add-roomNum" name="roomnum" class="wu-text easyui-validatebox" data-options="required:true, missingMessage:'请填写房间类型房间数'" /></td>
             </tr>
             <tr>
                 <td align="right">状态:</td>
@@ -98,15 +98,15 @@
             </tr>
             <tr>
                 <td align="right">可住人数:</td>
-                <td><input type="text" id="edit-liveNum" name="liveNum" class="wu-text easyui-validatebox" data-options="required:true, missingMessage:'请填写房间类型可住人数'" /></td>
+                <td><input type="text" id="edit-liveNum" name="livenum" class="wu-text easyui-validatebox" data-options="required:true, missingMessage:'请填写房间类型可住人数'" /></td>
             </tr>
             <tr>
                 <td align="right">床位数:</td>
-                <td><input type="text" id="edit-bedNum" name="bedNum" class="wu-text easyui-validatebox" data-options="required:true, missingMessage:'请填写房间类型床位数'" /></td>
+                <td><input type="text" id="edit-bedNum" name="bednum" class="wu-text easyui-validatebox" data-options="required:true, missingMessage:'请填写房间类型床位数'" /></td>
             </tr>
             <tr>
                 <td align="right">房间数:</td>
-                <td><input type="text" id="edit-roomNum" name="roomNum" class="wu-text easyui-validatebox" data-options="required:true, missingMessage:'请填写房间类型房间数'" /></td>
+                <td><input type="text" id="edit-roomNum" name="roomnum" class="wu-text easyui-validatebox" data-options="required:true, missingMessage:'请填写房间类型房间数'" /></td>
             </tr>
             <tr>
                 <td align="right">状态:</td>
@@ -297,9 +297,9 @@ function uploadPhoto(){
             	$("#edit-id").val(item.id);
             	$("#edit-name").val(item.name);
             	$("#edit-price").val(item.price);
-            	$("#edit-liveNum").val(item.liveNum);
-            	$("#edit-bedNum").val(item.bedNum);
-            	$("#edit-roomNum").val(item.roomNum);
+            	$("#edit-liveNum").val(item.livenum);
+            	$("#edit-bedNum").val(item.bednum);
+            	$("#edit-roomNum").val(item.roomnum);
             	$("#edit-status").combobox('setValue',item.status);
             	$("#edit-remark").val(item.remark);
             	$("#edit-preview-photo").attr('src',item.photo);
@@ -369,12 +369,12 @@ function uploadPhoto(){
                     return img;
                 }},
 			{ field:'price',title:'价格',width:100,sortable:true},
-			{ field:'liveNum',title:'可住人数',width:100,sortable:true},
-			{ field:'bedNum',title:'床位数',width:100,sortable:true},
-			{ field:'roomNum',title:'房间数',width:100,sortable:true},
-			{ field:'avilableNum',title:'可用房间数',width:100,sortable:true},
-			{ field:'bookNum',title:'已预定数',width:100,sortable:true},
-			{ field:'livedNum',title:'已入住数',width:100,sortable:true},
+			{ field:'livenum',title:'可住人数',width:100,sortable:true},
+			{ field:'bednum',title:'床位数',width:100,sortable:true},
+			{ field:'roomnum',title:'房间数',width:100,sortable:true},
+			{ field:'avilablenum',title:'可用房间数',width:100,sortable:true},
+			{ field:'booknum',title:'已预定数',width:100,sortable:true},
+			{ field:'livednum',title:'已入住数',width:100,sortable:true},
 			{ field:'status',title:'状态',width:100,formatter:function(value,row,index){
 				switch(value){
 					case 0:{

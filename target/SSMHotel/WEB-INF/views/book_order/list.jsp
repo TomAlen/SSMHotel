@@ -45,9 +45,9 @@
             <tr>
                 <td align="right">客户:</td>
                 <td>
-	                <select id="add-accountId" name="accountId" class="easyui-combobox" panelHeight="auto" style="width:268px" data-options="required:true, missingMessage:'请选择客户'">
+	                <select id="add-accountId" name="accountid" class="easyui-combobox" panelHeight="auto" style="width:268px" data-options="required:true, missingMessage:'请选择客户'">
 		            	<c:forEach items="${accountList}" var="account">
-		            	<option value="${account.id }" real-name="${account.realname }" id-card="${account.idCard }" mobile="${account.mobile }">${account.name }</option>
+		            	<option value="${account.id }" real-name="${account.realname }" id-card="${account.idcard }" mobile="${account.mobile }">${account.name }</option>
 		            	</c:forEach>
 	            	</select>	
                 </td>
@@ -55,7 +55,7 @@
             <tr>
                 <td align="right">房型:</td>
                 <td>
-	                <select id="add-roomTypeId" name="roomTypeId" class="easyui-combobox" panelHeight="auto" style="width:268px" data-options="required:true, missingMessage:'请选择房型'">
+	                <select id="add-roomTypeId" name="roomtypeid" class="easyui-combobox" panelHeight="auto" style="width:268px" data-options="required:true, missingMessage:'请选择房型'">
 		            	<c:forEach items="${roomTypeList}" var="roomType">
 		            	<option value="${roomType.id }" roomPrice="${roomType.price}">${roomType.name }</option>
 		            	</c:forEach>
@@ -75,7 +75,7 @@
             </tr>
             <tr>
                 <td align="right">身份证号:</td>
-                <td><input type="text" id="add-idCard" name="idCard" class="wu-text easyui-validatebox" data-options="required:true, missingMessage:'请输入身份证号'"  /></td>
+                <td><input type="text" id="add-idCard" name="idcard" class="wu-text easyui-validatebox" data-options="required:true, missingMessage:'请输入身份证号'"  /></td>
             </tr>
             <tr>
                 <td align="right">手机号码:</td>
@@ -83,11 +83,11 @@
             </tr>
             <tr>
                 <td align="right">入住日期:</td>
-                <td><input type="text" id="add-arriveDate" name="arriveTime" class="wu-text easyui-datebox easyui-validatebox"  /></td>
+                <td><input type="text" id="add-arriveDate" name="arrivetime" class="wu-text easyui-datebox easyui-validatebox"  /></td>
             </tr>
             <tr>
                 <td align="right">离店日期:</td>
-                <td><input type="text" id="add-leaveDate" name="leaveTime" class="wu-text easyui-datebox easyui-validatebox"  /></td>
+                <td><input type="text" id="add-leaveDate" name="leavetime" class="wu-text easyui-datebox easyui-validatebox"  /></td>
             </tr>
             <tr>
                 <td align="right">状态:</td>
@@ -114,9 +114,9 @@
            <tr>
                 <td align="right">客户:</td>
                 <td>
-	                <select id="edit-accountId" name="accountId" class="easyui-combobox" panelHeight="auto" style="width:268px" data-options="required:true, missingMessage:'请选择客户'">
+	                <select id="edit-accountId" name="accountid" class="easyui-combobox" panelHeight="auto" style="width:268px" data-options="required:true, missingMessage:'请选择客户'">
 		            	<c:forEach items="${accountList}" var="account">
-		            	<option value="${account.id }" real-name="${account.realname }" id-card="${account.idCard }" mobile="${account.mobile }">${account.name }</option>
+		            	<option value="${account.id }" real-name="${account.realname }" id-card="${account.idcard }" mobile="${account.mobile }">${account.name }</option>
 		            	</c:forEach>
 	            	</select>	
                 </td>
@@ -124,7 +124,7 @@
             <tr>
                 <td align="right">房型:</td>
                 <td>
-	                <select id="edit-roomTypeId" name="roomTypeId" class="easyui-combobox" panelHeight="auto" style="width:268px" data-options="required:true, missingMessage:'请选择房型'">
+	                <select id="edit-roomTypeId" name="roomtypeid" class="easyui-combobox" panelHeight="auto" style="width:268px" data-options="required:true, missingMessage:'请选择房型'">
 		            	<c:forEach items="${roomTypeList}" var="roomType">
 		            	<option value="${roomType.id }">${roomType.name }</option>
 		            	</c:forEach>
@@ -143,7 +143,7 @@
             </tr>
             <tr>
                 <td align="right">身份证号:</td>
-                <td><input type="text" id="edit-idCard" name="idCard" class="wu-text easyui-validatebox" data-options="required:true, missingMessage:'请输入身份证号'"  /></td>
+                <td><input type="text" id="edit-idCard" name="idcard" class="wu-text easyui-validatebox" data-options="required:true, missingMessage:'请输入身份证号'"  /></td>
             </tr>
             <tr>
                 <td align="right">手机号码:</td>
@@ -151,11 +151,11 @@
             </tr>
             <tr>
                 <td align="right">入住日期:</td>
-                <td><input type="text" id="edit-arriveDate" name="arriveTime" class="wu-text easyui-datebox easyui-validatebox"  /></td>
+                <td><input type="text" id="edit-arriveDate" name="arrivetime" class="wu-text easyui-datebox easyui-validatebox"  /></td>
             </tr>
             <tr>
                 <td align="right">离店日期:</td>
-                <td><input type="text" id="edit-leaveDate" name="leaveTime" class="wu-text easyui-datebox easyui-validatebox"  /></td>
+                <td><input type="text" id="edit-leaveDate" name="leavetime" class="wu-text easyui-datebox easyui-validatebox"  /></td>
             </tr>
             <tr>
                 <td align="right">状态:</td>
@@ -316,13 +316,13 @@
             	//$("#add-form input").val('');
             	$("#edit-id").val(item.id);
             	$("#edit-name").val(item.name);
-            	$("#edit-arriveDate").datebox('setValue',item.arriveDate);
-            	$("#edit-leaveDate").datebox('setValue',item.leaveDate);
-            	$("#edit-idCard").val(item.idCard);
+            	$("#edit-arriveDate").datebox('setValue',item.arrivetime);
+            	$("#edit-leaveDate").datebox('setValue',item.leavetime);
+            	$("#edit-idCard").val(item.idcard);
             	$("#edit-mobile").val(item.mobile);
             	$("#edit-status").combobox('setValue',item.status);
-            	$("#edit-accountId").combobox('setValue',item.accountId);
-            	$("#edit-roomTypeId").combobox('setValue',item.roomTypeId);
+            	$("#edit-accountId").combobox('setValue',item.accountid);
+            	$("#edit-roomTypeId").combobox('setValue',item.roomtypeid);
             	$("#edit-remark").val(item.remark);
             }
         });
@@ -373,7 +373,7 @@
 		if(roomType != -1){
 			option.roomTypeId = roomType;
 		}
-		option.idCard = $("#search-idCard").val();
+		option.idcard = $("#search-idCard").val();
 		option.mobile = $("#search-mobile").val();
 		$('#data-datagrid').datagrid('reload',option);
 	});
@@ -451,14 +451,14 @@
 		fit:true,
 		columns:[[
 			{ field:'chk',checkbox:true},
-			{ field:'accountId',title:'客户',width:100,formatter:function(value,row,index){
+			{ field:'accountid',title:'客户',width:100,formatter:function(value,row,index){
 				var accountList = $("#search-account").combobox('getData');
 				for(var i=0;i<accountList.length;i++){
 					if(accountList[i].value == value)return accountList[i].text;
 				}
 				return value;
 			}},
-			{ field:'roomTypeId',title:'房型',width:150,formatter:function(value,row,index){
+			{ field:'roomtypeid',title:'房型',width:150,formatter:function(value,row,index){
 				var roomTypeList = $("#search-roomType").combobox('getData');
 				for(var i=0;i<roomTypeList.length;i++){
 					if(roomTypeList[i].value == value){
@@ -468,10 +468,10 @@
 				return value;
 			}},
 			{ field:'name',title:'预定人',width:60,sortable:true},
-			{ field:'idCard',title:'身份证号',width:100,sortable:true},
+			{ field:'idcard',title:'身份证号',width:100,sortable:true},
 			{ field:'mobile',title:'手机号',width:100,sortable:true},
-			{ field:'arriveTime',title:'入住日期',width:100,sortable:true},
-			{ field:'leaveTime',title:'离店日期',width:100,sortable:true},
+			{ field:'arrivetime',title:'入住日期',width:100,sortable:true},
+			{ field:'leavetime',title:'离店日期',width:100,sortable:true},
 			{ field:'status',title:'状态',width:100,formatter:function(value,row,index){
 				switch(value){
 					case 0:{
@@ -486,7 +486,7 @@
 				}
 				return value;
 			}},
-			{ field:'createTime',title:'预定时间',width:150,formatter:function(value,row,index){
+			{ field:'createtime',title:'预定时间',width:150,formatter:function(value,row,index){
 				return format(value);
 			}},
 			{ field:'remark',title:'备注',width:120,sortable:true}

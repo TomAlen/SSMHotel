@@ -15,8 +15,11 @@ import java.util.List;
 @Service
 public class RoleService {
 
-    @Autowired
-    private RoleDao roleDao;
+    private final RoleDao roleDao;
+
+    public RoleService(RoleDao roleDao) {
+        this.roleDao = roleDao;
+    }
 
     //根据id查出角色
     public Role findById(Integer UserByRoleId) {
@@ -51,5 +54,10 @@ public class RoleService {
     //删除角色
     public int deleteId(Integer id) {
         return roleDao.deleteByPrimaryKey(id);
+    }
+
+    //获取所有角色
+    public List<Role> selectAll() {
+        return roleDao.selectByExample(new RoleExample());
     }
 }

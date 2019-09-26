@@ -3,6 +3,8 @@ package com.zwhzzz.Mapper;
 import com.zwhzzz.Pojo.User;
 import com.zwhzzz.Pojo.UserExample;
 import java.util.List;
+import java.util.Map;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface UserDao {
@@ -29,4 +31,6 @@ public interface UserDao {
     int updateByPrimaryKey(User record);
 
     int editPassword(User user);
+
+    List<User> getUserList(Map<String,Object> queryMap);
 }

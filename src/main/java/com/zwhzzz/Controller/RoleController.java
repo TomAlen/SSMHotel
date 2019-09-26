@@ -28,17 +28,20 @@ import java.util.Map;
 @RequestMapping("/admin/role")
 public class RoleController {
 
-    @Autowired
-    RoleService roleService;
+    private final RoleService roleService;
 
-    @Autowired
-    MenuService menuService;
+    private final MenuService menuService;
 
-    @Autowired
-    AuthorityService authorityService;
+    private final AuthorityService authorityService;
 
     //返回值传给前端显示消息
     public Map<String,Object> result = new HashMap<>(0);
+
+    public RoleController(AuthorityService authorityService, MenuService menuService, RoleService roleService) {
+        this.authorityService = authorityService;
+        this.menuService = menuService;
+        this.roleService = roleService;
+    }
 
     @RequestMapping(value = "/list",method = RequestMethod.GET)
     public ModelAndView list(ModelAndView model) {

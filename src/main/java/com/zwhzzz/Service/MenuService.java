@@ -16,8 +16,11 @@ import java.util.Map;
 @Service
 public class MenuService {
 
-    @Autowired
-    private MenuDao menuDao;
+    private final MenuDao menuDao;
+
+    public MenuService(MenuDao menuDao) {
+        this.menuDao = menuDao;
+    }
 
     //获取菜单信息
     public List<Menu> findByMenuList(String menuIds) {

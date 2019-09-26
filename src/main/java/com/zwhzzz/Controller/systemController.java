@@ -30,22 +30,25 @@ import java.util.Map;
 @RequestMapping("/system")
 public class systemController {
 
-    @Autowired
-    private UserService userService;
+    private final UserService userService;
 
-    @Autowired
-    private LogService logService;
+    private final LogService logService;
 
-    @Autowired
-    private RoleService roleService;
+    private final RoleService roleService;
 
-    @Autowired
-    private AuthorityService authorityService;
+    private final AuthorityService authorityService;
 
-    @Autowired
-    private MenuService menuService;
+    private final MenuService menuService;
 
     public Map<String,Object> result = new HashMap<>(0);
+
+    public systemController(UserService userService, LogService logService, RoleService roleService, AuthorityService authorityService, MenuService menuService) {
+        this.userService = userService;
+        this.logService = logService;
+        this.roleService = roleService;
+        this.authorityService = authorityService;
+        this.menuService = menuService;
+    }
 
     /**
      * 登录

@@ -71,7 +71,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, photo, `name`, `password`, realname, idCard, mobile, address, `status`
+    id, photo, name, password, realname, idCard, mobile, address, status
   </sql>
   <select id="selectByExample" parameterType="com.zwhzzz.Pojo.AccountExample" resultMap="BaseResultMap">
     select
@@ -112,9 +112,9 @@
     </if>
   </delete>
   <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.zwhzzz.Pojo.Account" useGeneratedKeys="true">
-    insert into account (photo, `name`, `password`, 
+    insert into account (photo, name, password,
       realname, idCard, mobile, 
-      address, `status`)
+      address, status)
     values (#{photo,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
       #{realname,jdbcType=VARCHAR}, #{idcard,jdbcType=VARCHAR}, #{mobile,jdbcType=VARCHAR}, 
       #{address,jdbcType=VARCHAR}, #{status,jdbcType=INTEGER})
@@ -126,10 +126,10 @@
         photo,
       </if>
       <if test="name != null">
-        `name`,
+        name,
       </if>
       <if test="password != null">
-        `password`,
+        password,
       </if>
       <if test="realname != null">
         realname,
@@ -144,7 +144,7 @@
         address,
       </if>
       <if test="status != null">
-        `status`,
+        status,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
@@ -190,10 +190,10 @@
         photo = #{record.photo,jdbcType=VARCHAR},
       </if>
       <if test="record.name != null">
-        `name` = #{record.name,jdbcType=VARCHAR},
+        name = #{record.name,jdbcType=VARCHAR},
       </if>
       <if test="record.password != null">
-        `password` = #{record.password,jdbcType=VARCHAR},
+        password = #{record.password,jdbcType=VARCHAR},
       </if>
       <if test="record.realname != null">
         realname = #{record.realname,jdbcType=VARCHAR},
@@ -208,7 +208,7 @@
         address = #{record.address,jdbcType=VARCHAR},
       </if>
       <if test="record.status != null">
-        `status` = #{record.status,jdbcType=INTEGER},
+        status = #{record.status,jdbcType=INTEGER},
       </if>
     </set>
     <if test="_parameter != null">
@@ -219,13 +219,13 @@
     update account
     set id = #{record.id,jdbcType=INTEGER},
       photo = #{record.photo,jdbcType=VARCHAR},
-      `name` = #{record.name,jdbcType=VARCHAR},
-      `password` = #{record.password,jdbcType=VARCHAR},
+      name = #{record.name,jdbcType=VARCHAR},
+      password = #{record.password,jdbcType=VARCHAR},
       realname = #{record.realname,jdbcType=VARCHAR},
       idCard = #{record.idcard,jdbcType=VARCHAR},
       mobile = #{record.mobile,jdbcType=VARCHAR},
       address = #{record.address,jdbcType=VARCHAR},
-      `status` = #{record.status,jdbcType=INTEGER}
+      status = #{record.status,jdbcType=INTEGER}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -237,10 +237,10 @@
         photo = #{photo,jdbcType=VARCHAR},
       </if>
       <if test="name != null">
-        `name` = #{name,jdbcType=VARCHAR},
+        name = #{name,jdbcType=VARCHAR},
       </if>
       <if test="password != null">
-        `password` = #{password,jdbcType=VARCHAR},
+        password = #{password,jdbcType=VARCHAR},
       </if>
       <if test="realname != null">
         realname = #{realname,jdbcType=VARCHAR},
@@ -255,7 +255,7 @@
         address = #{address,jdbcType=VARCHAR},
       </if>
       <if test="status != null">
-        `status` = #{status,jdbcType=INTEGER},
+        status = #{status,jdbcType=INTEGER},
       </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
@@ -263,13 +263,32 @@
   <update id="updateByPrimaryKey" parameterType="com.zwhzzz.Pojo.Account">
     update account
     set photo = #{photo,jdbcType=VARCHAR},
-      `name` = #{name,jdbcType=VARCHAR},
-      `password` = #{password,jdbcType=VARCHAR},
+      name = #{name,jdbcType=VARCHAR},
+      password = #{password,jdbcType=VARCHAR},
       realname = #{realname,jdbcType=VARCHAR},
       idCard = #{idcard,jdbcType=VARCHAR},
       mobile = #{mobile,jdbcType=VARCHAR},
       address = #{address,jdbcType=VARCHAR},
-      `status` = #{status,jdbcType=INTEGER}
+      status = #{status,jdbcType=INTEGER}
     where id = #{id,jdbcType=INTEGER}
   </update>
+
+  <select id="getAccountList" parameterType="Map" resultType="Account">
+    select * from account where 1 = 1
+    <if test="name != null">
+      and name like  '%${name}%'
+    </if>
+    <if test="realname != null">
+      and realname like  '%${realname}%'
+    </if>
+    <if test="idCard != null">
+      and idCard like  '%${idCard}%'
+    </if>
+    <if test="mobile != null">
+      and mobile like  '%${mobile}%'
+    </if>
+    <if test="status != null">
+      and status = #{status}
+    </if>
+  </select>
 </mapper>

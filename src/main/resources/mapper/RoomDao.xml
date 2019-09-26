@@ -69,7 +69,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, photo, sn, roomTypeId, floorId, `status`, remark
+    id, photo, sn, roomTypeId, floorId, status, remark
   </sql>
   <select id="selectByExample" parameterType="com.zwhzzz.Pojo.RoomExample" resultMap="BaseResultMap">
     select
@@ -111,7 +111,7 @@
   </delete>
   <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.zwhzzz.Pojo.Room" useGeneratedKeys="true">
     insert into room (photo, sn, roomTypeId, 
-      floorId, `status`, remark
+      floorId, status, remark
       )
     values (#{photo,jdbcType=VARCHAR}, #{sn,jdbcType=VARCHAR}, #{roomtypeid,jdbcType=INTEGER}, 
       #{floorid,jdbcType=INTEGER}, #{status,jdbcType=INTEGER}, #{remark,jdbcType=VARCHAR}
@@ -133,7 +133,7 @@
         floorId,
       </if>
       <if test="status != null">
-        `status`,
+        status,
       </if>
       <if test="remark != null">
         remark,
@@ -185,7 +185,7 @@
         floorId = #{record.floorid,jdbcType=INTEGER},
       </if>
       <if test="record.status != null">
-        `status` = #{record.status,jdbcType=INTEGER},
+        status = #{record.status,jdbcType=INTEGER},
       </if>
       <if test="record.remark != null">
         remark = #{record.remark,jdbcType=VARCHAR},
@@ -202,7 +202,7 @@
       sn = #{record.sn,jdbcType=VARCHAR},
       roomTypeId = #{record.roomtypeid,jdbcType=INTEGER},
       floorId = #{record.floorid,jdbcType=INTEGER},
-      `status` = #{record.status,jdbcType=INTEGER},
+      status = #{record.status,jdbcType=INTEGER},
       remark = #{record.remark,jdbcType=VARCHAR}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
@@ -224,7 +224,7 @@
         floorId = #{floorid,jdbcType=INTEGER},
       </if>
       <if test="status != null">
-        `status` = #{status,jdbcType=INTEGER},
+        status = #{status,jdbcType=INTEGER},
       </if>
       <if test="remark != null">
         remark = #{remark,jdbcType=VARCHAR},
@@ -238,8 +238,24 @@
       sn = #{sn,jdbcType=VARCHAR},
       roomTypeId = #{roomtypeid,jdbcType=INTEGER},
       floorId = #{floorid,jdbcType=INTEGER},
-      `status` = #{status,jdbcType=INTEGER},
+      status = #{status,jdbcType=INTEGER},
       remark = #{remark,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
+
+  <select id="getRoomList" parameterType="Map" resultType="Room">
+    select * from room where 1 = 1
+    <if test="sn != null">
+      and sn like  '%${sn}%'
+    </if>
+    <if test="roomTypeId != null">
+      and roomTypeId = #{roomTypeId}
+    </if>
+    <if test="floorId != null">
+      and floorId = #{floorId}
+    </if>
+    <if test="status != null">
+      and status = #{status}
+    </if>
+  </select>
 </mapper>

@@ -58,7 +58,7 @@
             <tr>
                 <td align="right">房间类型:</td>
                 <td>
-	                <select id="add-roomTypeId" name="roomTypeId" class="easyui-combobox" panelHeight="auto" style="width:268px">
+	                <select id="add-roomTypeId" name="roomtypeid" class="easyui-combobox" panelHeight="auto" style="width:268px">
 		            	<c:forEach items="${roomTypeList }" var="roomType">
 		            	<option value="${roomType.id }">${roomType.name }</option>
 		            	</c:forEach>
@@ -68,7 +68,7 @@
             <tr>
                 <td align="right">所属楼层:</td>
                 <td>
-	                <select id="add-floorId" name="floorId" class="easyui-combobox" panelHeight="auto" style="width:268px">
+	                <select id="add-floorId" name="floorid" class="easyui-combobox" panelHeight="auto" style="width:268px">
 		            	<c:forEach items="${floorList }" var="floor">
 		            	<option value="${floor.id }">${floor.name }</option>
 		            	</c:forEach>
@@ -115,7 +115,7 @@
             <tr>
                 <td align="right">房间类型:</td>
                 <td>
-	                <select id="edit-roomTypeId" name="roomTypeId" class="easyui-combobox" panelHeight="auto" style="width:268px">
+	                <select id="edit-roomTypeId" name="roomtypeid" class="easyui-combobox" panelHeight="auto" style="width:268px">
 		            	<c:forEach items="${roomTypeList }" var="roomType">
 		            	<option value="${roomType.id }">${roomType.name }</option>
 		            	</c:forEach>
@@ -125,7 +125,7 @@
             <tr>
                 <td align="right">所属楼层:</td>
                 <td>
-	                <select id="edit-floorId" name="floorId" class="easyui-combobox" panelHeight="auto" style="width:268px">
+	                <select id="edit-floorId" name="floorid" class="easyui-combobox" panelHeight="auto" style="width:268px">
 		            	<c:forEach items="${floorList }" var="floor">
 		            	<option value="${floor.id }">${floor.name }</option>
 		            	</c:forEach>
@@ -321,8 +321,8 @@ function uploadPhoto(){
             	$("#edit-id").val(item.id);
             	$("#edit-sn").val(item.sn);
             	$("#edit-status").combobox('setValue',item.status);
-            	$("#edit-roomTypeId").combobox('setValue',item.roomTypeId);
-            	$("#edit-floorId").combobox('setValue',item.floorId);
+            	$("#edit-roomTypeId").combobox('setValue',item.roomtypeid);
+            	$("#edit-floorId").combobox('setValue',item.floorid);
             	$("#edit-remark").val(item.remark);
             	$("#edit-preview-photo").attr('src',item.photo);
             	$("#edit-photo").val(item.photo);
@@ -397,14 +397,14 @@ function uploadPhoto(){
 				return img;
 			}},
 			{ field:'sn',title:'房间编号',width:100,sortable:true},
-			{ field:'roomTypeId',title:'房间类型',width:100,formatter:function(value,row,index){
+			{ field:'roomtypeid',title:'房间类型',width:100,formatter:function(value,row,index){
 				var roomTypeList = $("#search-roomType").combobox('getData');
 				for(var i=0;i<roomTypeList.length;i++){
 					if(roomTypeList[i].value == value)return roomTypeList[i].text;
 				}
 				return value;
 			}},
-			{ field:'floorId',title:'所属楼层',width:100,formatter:function(value,row,index){
+			{ field:'floorid',title:'所属楼层',width:100,formatter:function(value,row,index){
 				var floorList = $("#search-floor").combobox('getData');
 				for(var i=0;i<floorList.length;i++){
 					if(floorList[i].value == value)return floorList[i].text;

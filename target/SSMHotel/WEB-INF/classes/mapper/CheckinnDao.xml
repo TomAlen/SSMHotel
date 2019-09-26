@@ -352,4 +352,27 @@
       remark = #{remark,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
+
+  <select id="getList" parameterType="Map" resultType="Checkinn">
+    select * from checkinn where 1 = 1
+    <if test="name != null">
+      and name like  '%${name}%'
+    </if>
+    <if test="idCard  != null">
+      and idCard like  '%${idCard}%'
+    </if>
+    <if test="mobile != null">
+      and mobile like  '%${mobile}%'
+    </if>
+    <if test="roomId != null">
+      and roomId = #{roomId}
+    </if>
+    <if test="roomTypeId != null">
+      and roomTypeId = #{roomTypeId}
+    </if>
+    <if test="status != null">
+      and status = #{status}
+    </if>
+  </select>
+
 </mapper>

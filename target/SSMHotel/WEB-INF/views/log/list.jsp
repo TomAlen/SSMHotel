@@ -172,7 +172,7 @@
 		columns:[[
 			{ field:'chk',checkbox:true},
 			{ field:'content',title:'日志内容',width:100,sortable:true},
-			{ field:'createTime',title:'时间',width:200,formatter:function(value,row,index){
+			{ field:'createtime',title:'时间',width:200,formatter:function(value,row,index){
 				return format(value);
 			}},
 		]]

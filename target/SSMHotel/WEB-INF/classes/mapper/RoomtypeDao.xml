@@ -337,4 +337,15 @@
       CuStatus = #{custatus,jdbcType=INTEGER}
     where id = #{id,jdbcType=INTEGER}
   </update>
+
+  <select id="getRoomTypeList" parameterType="Map" resultType="RoomType">
+    select * from roomtype where 1 = 1
+    <if test="name != null">
+      and name like  '%${name}%'
+    </if>
+    <if test="status != null">
+      and status = #{status}
+    </if>
+  </select>
+
 </mapper>

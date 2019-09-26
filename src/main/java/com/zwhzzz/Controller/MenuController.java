@@ -25,8 +25,12 @@ import java.util.Map;
 public class MenuController {
 
 
-    @Autowired
-    private MenuService menuService;
+    private final MenuService menuService;
+
+    public MenuController(MenuService menuService) {
+        this.menuService = menuService;
+    }
+
     /**
      * 返回菜单列表页
      * 转向视图

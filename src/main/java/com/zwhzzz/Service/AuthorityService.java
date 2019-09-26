@@ -15,8 +15,11 @@ import java.util.List;
 @Service
 public class AuthorityService {
 
-    @Autowired
-    private AuthorityDao authorityDao;
+    private final AuthorityDao authorityDao;
+
+    public AuthorityService(AuthorityDao authorityDao) {
+        this.authorityDao = authorityDao;
+    }
 
 
     public List<Authority> getListByRoleId(Integer roleId) {

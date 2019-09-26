@@ -41,17 +41,13 @@
             dataType:'json',
             data:{type:type},
             success:function (data) {
-                if(data.type == 'success'){
+                if(data.success == true){
                     var title = "酒店营业额统计"
                     if(type == 'day') {
-                          // option.title == option.title + "（按日统计）"
                         title = title +"（按日统计）"
                     }else{
-                          // option.title == option.title + "（按月统计）"
                         title = title +"（按月统计）"
                     }
-                   /* option.xAxis.data == data.content.stat_date;
-                    option.series.data == data.content.money;*/
                     var option = {
                         title : {
                             text: title,
@@ -107,7 +103,7 @@
                     myChart.setOption(option)
                 }
                 else{
-                    alert(data.msg);
+                    //alert(data.msg);
                 }
 
             }

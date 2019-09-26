@@ -22,8 +22,11 @@ import java.util.Map;
 @RequestMapping("/admin/log")
 public class LogController {
 
-    @Autowired
-    private LogService logService;
+    private final LogService logService;
+
+    public LogController(LogService logService) {
+        this.logService = logService;
+    }
 
     /**
      * 跳转到日志管理页面

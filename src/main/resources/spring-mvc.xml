@@ -49,9 +49,9 @@
     <!--将springmvc不能请求的业务交给tomcat处理-->
     <mvc:default-servlet-handler/>
 
-    <!--&lt;!&ndash;配置拦截器&ndash;&gt;
+    <!--配置拦截器-->
     <mvc:interceptors>
-        &lt;!&ndash;后台登录拦截器&ndash;&gt;
+        <!--后台登录拦截器-->
         <mvc:interceptor>
             <mvc:mapping path="/admin/**"/>
             <mvc:mapping path="/system/*"/>
@@ -61,13 +61,13 @@
             <mvc:exclude-mapping path="/webapp/WEB-INF/statics"/>
             <bean class="com.zwhzzz.interceptor.admin.LoginInterceptor"/>
         </mvc:interceptor>
-        &lt;!&ndash;前台登录拦截器&ndash;&gt;
+      <!--  &lt;!&ndash;前台登录拦截器&ndash;&gt;
         <mvc:interceptor>
             &lt;!&ndash;只要是home/account 路径下的都拦截&ndash;&gt;
             <mvc:mapping path="/home/account/**"/>
             <bean class="com.zwhzzz.interceptor.home.LoginInterceptor"/>
-        </mvc:interceptor>
-    </mvc:interceptors>-->
+        </mvc:interceptor>-->
+    </mvc:interceptors>
 
     <!--  配置文件上传解析器  -->
     <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">

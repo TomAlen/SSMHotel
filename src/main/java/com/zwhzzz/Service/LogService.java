@@ -17,8 +17,11 @@ import java.util.List;
 @Service
 public class LogService {
 
-    @Autowired
-    private LogDao logDao;
+    private final LogDao logDao;
+
+    public LogService(LogDao logDao) {
+        this.logDao = logDao;
+    }
 
     //插入日志
     public void insertContent(String content) {

@@ -152,7 +152,8 @@
                 }
             }],
             onBeforeOpen:function(){
-                $('#add-form input').val('');
+                //$('#add-form input').val('');
+                $('#add-form').form('clear');
             }
         });
 	}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zwhzzz.Mapper.StatisticsDao">
+
+
+  <!--按日统计-->
+  <select id="getStatsByDays" resultType="Map">
+    SELECT sum(checkinPrice) as money, DATE_FORMAT(createTime,'%Y-%m-%d') as stat_date from checkinn GROUP BY DATE_FORMAT(createTime,'%Y-%m-%d');
+  </select>
+
+<!--  按月统计-->
+  <select id="getStatsByMonths" resultType="Map">
+    SELECT sum(checkinPrice) as money, DATE_FORMAT(createTime,'%Y-%m') as stat_date from checkinn GROUP BY DATE_FORMAT(createTime,'%Y-%m');
+  </select>
+
+
+
+
+</mapper>

@@ -3,6 +3,8 @@ package com.zwhzzz.Mapper;
 import com.zwhzzz.Pojo.Checkinn;
 import com.zwhzzz.Pojo.CheckinnExample;
 import java.util.List;
+import java.util.Map;
+
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
@@ -29,4 +31,6 @@ public interface CheckinnDao {
     int updateByPrimaryKeySelective(Checkinn record);
 
     int updateByPrimaryKey(Checkinn record);
+
+    List<Checkinn> getList(Map<String,Object> queryMap);
 }

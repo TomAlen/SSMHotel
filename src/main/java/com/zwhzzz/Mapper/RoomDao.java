@@ -3,6 +3,8 @@ package com.zwhzzz.Mapper;
 import com.zwhzzz.Pojo.Room;
 import com.zwhzzz.Pojo.RoomExample;
 import java.util.List;
+import java.util.Map;
+
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
@@ -29,4 +31,6 @@ public interface RoomDao {
     int updateByPrimaryKeySelective(Room record);
 
     int updateByPrimaryKey(Room record);
+
+    List<Room> getRoomList(Map<String,Object> queryMap);
 }

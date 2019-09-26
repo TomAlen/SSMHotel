@@ -405,28 +405,26 @@
 					if(value == roleList[i].value) {
 					    return roleList[i].text;
                     }
-                   // console.log(roleList[i].text)
-                   // console.log(value + "->" + roleList[i].value)
 				}
 				return value;
 			}},
-			{ field:'gender',title:'性别',width:100,formatter:function(value,row,index){
+			{field:'gender',title:'性别',width:100,formatter:function(value,row,index){
 				switch(value){
-					case "0":{
+					case 0:{
 						return '未知';
 					}
-					case "1":{
-						return '男';
+					case 1:{
+						return "男";
 					}
-					case "2":{
+					case 2:{
 						return '女';
 					}
 				}
 				return value;
 			}},
-			{ field:'age',title:'年龄',width:100},
+			{field:'age',title:'年龄',width:100},
             {field:'email',title:'邮箱',width:100},
-			{ field:'address',title:'地址',width:200}
+			{field:'address',title:'地址',width:200}
 		]],
 		onLoadSuccess:function(data){  
 			$('.authority-edit').linkbutton({text:'编辑权限',plain:true,iconCls:'icon-edit'});  
