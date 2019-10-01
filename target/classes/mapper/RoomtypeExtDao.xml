@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zwhzzz.Mapper.RoomTypeExtDao">
+    <!--促销商品的sql-->
+    <select id="cuxiaoList" resultType="com.zwhzzz.DTO.roomTypeDTO">
+        select * from roomtype where id in (4,5,7,8,10,12,14)
+        <if test="name != null">
+            and name like '%{name}%'
+        </if>
+
+    </select>
+
+    <!--跳转促销订单页面，将房型拿出-->
+    <select id="CuListRoomType" parameterType="Integer" resultType="com.zwhzzz.DTO.roomTypeDTO">
+    select * from roomtype where id = #{value}
+  </select>
+
+    <select id="getList" parameterType="Map" resultType="com.zwhzzz.DTO.roomTypeDTO">
+        select * from roomtype where 1 = 1
+        <if test="name != null">
+            and name like '%${name}%'
+        </if>
+    </select>
+
+    <select id="getCuList" resultType="com.zwhzzz.DTO.roomTypeDTO">
+    select * from roomtype where id in (4,5,7,8,10,12,14)
+  </select>
+
+
+</mapper>

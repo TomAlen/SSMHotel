@@ -10,14 +10,15 @@
   <title>毕业设计酒店管理系统登录页面</title>
   <link href="/home/css/index.css" type="text/css" rel="Stylesheet" />
   <link href="/home/css/login.css" type="text/css" rel="Stylesheet" />
+  <link rel="stylesheet" href="/layui/css/layui.css" type="text/css"/>
+  <link rel="stylesheet" href="/layui/css/modules/layer/default/layer.css" type="text/css"/>
+
  </head>
  <body>
-
        <header>
 	          <div>
 				  <a href="index.html"><img src="/home/images/log.jpg" alt=""></a> <span>会员登录</span>
 			  </div>
-
 	   </header>
        <section>
 	        <div class="left">
@@ -35,12 +36,6 @@
 							   <span class="icon"></span>
 							</li>
 						 </ul>
-						 <!--<div class="codes">-->
-							<!--<input class="blur" type="text" value="请输入验证码">-->
-							<!--&lt;!&ndash;验证码&ndash;&gt;-->
-							<!--<div></div>-->
-							<!--<a class="change" href="javascript:codes();">换一张</a>-->
-						 <!--</div>-->
 					   <div class="codes" style="margin-top:25px;">
 							 <input id="vcode" maxlength="4" type="text" class="blur" placeholder="请输入验证码"/>
 							 <img id="cpacha-img" src="../system/get_cpacha?vl=4&w=120&h=33&type=loginCpacha" onclick="changeVcode()" class="code" style="cursor:pointer;"/>
@@ -54,39 +49,49 @@
 	   </section>
        <%@include file="../common/footer.jsp"%>
 	  <script src="/home/js/jquery-1.11.3.js"></script>
+	   <script src="/layui/js/layui.js"></script>
+	   <script src="/layui/js/lay/modules/layer.js"></script>
 <script>
 function changeVcode(){
 	$("#cpacha-img").attr("src",'../system/get_cpacha?vl=4&w=120&h=33&type=loginCpacha&t=' + new Date().getTime());
 }
-$(document).ready(function(){
-	$("#bt_login").click(function(){
+
+	$("#bt_login").click(function () {
 		var name = $("#name").val();
 		var password = $("#password").val();
 		var vcode = $("#vcode").val();
-		if(name == '' || password == ''){
-			alert('请填写完成用户信息再提交!');
+		if (name == '' || password == '') {
+			layer.open({
+				title: '错误'
+				, content: '请填写用户信息'
+			});
 			return;
 		}
-		if(vcode == ''){
-		    alert('请填写验证码！');
-		    return;
-        }
+		if (vcode == '') {
+			layer.open({
+				title: '错误'
+				,content: '请填写验证码'
+			});
+			return;
+		}
 		$.ajax({
-			url:'login',
-			type:'post',
-			dataType:'json',
-			data:{name:name,password:password,vcode:vcode},
-			success:function(data){
-				if(data.success == true){
+			url: 'login',
+			type: 'post',
+			dataType: 'json',
+			data: {name: name, password: password, vcode: vcode},
+			success: function (data) {
+				if (data.success == true) {
 					window.location.href = 'index';
-				}else{
-					alert(data.msg)
+				} else {
+					layer.open({
+						title: '错误'
+						, content: data.msg
+					});
 					changeVcode();
 				}
 			}
 		});
 	})
-});
 </script>
  </body>
 </html>

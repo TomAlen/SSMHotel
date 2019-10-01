@@ -3,7 +3,6 @@ package com.zwhzzz.Service;
 import com.zwhzzz.Mapper.AccountDao;
 import com.zwhzzz.Pojo.Account;
 import com.zwhzzz.Pojo.AccountExample;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -52,6 +51,15 @@ public class AccountService {
 
     public List<Account> getList() {
         return accountDao.selectByExample(new AccountExample());
+    }
+
+    public List<Account> getAccountById(Integer id) {
+
+        AccountExample example = new AccountExample();
+        example.createCriteria()
+                .andIdEqualTo(id);
+        List<Account> accounts = accountDao.selectByExample(example);
+        return accounts;
     }
 }
 

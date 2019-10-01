@@ -75,8 +75,8 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, `name`, photo, price, liveNum, bedNum, roomNum, avilableNum, bookNum, livedNum, 
-    `status`, remark, CuStatus
+    id, name, photo, price, liveNum, bedNum, roomNum, avilableNum, bookNum, livedNum,
+    status, remark, CuStatus
   </sql>
   <select id="selectByExample" parameterType="com.zwhzzz.Pojo.RoomtypeExample" resultMap="BaseResultMap">
     select
@@ -117,10 +117,10 @@
     </if>
   </delete>
   <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.zwhzzz.Pojo.Roomtype" useGeneratedKeys="true">
-    insert into roomtype (`name`, photo, price, 
+    insert into roomtype (name, photo, price,
       liveNum, bedNum, roomNum, 
       avilableNum, bookNum, livedNum, 
-      `status`, remark, CuStatus
+      status, remark, CuStatus
       )
     values (#{name,jdbcType=VARCHAR}, #{photo,jdbcType=VARCHAR}, #{price,jdbcType=REAL}, 
       #{livenum,jdbcType=INTEGER}, #{bednum,jdbcType=INTEGER}, #{roomnum,jdbcType=INTEGER}, 
@@ -132,7 +132,7 @@
     insert into roomtype
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="name != null">
-        `name`,
+        name,
       </if>
       <if test="photo != null">
         photo,
@@ -159,7 +159,7 @@
         livedNum,
       </if>
       <if test="status != null">
-        `status`,
+        status,
       </if>
       <if test="remark != null">
         remark,
@@ -220,7 +220,7 @@
         id = #{record.id,jdbcType=INTEGER},
       </if>
       <if test="record.name != null">
-        `name` = #{record.name,jdbcType=VARCHAR},
+        name = #{record.name,jdbcType=VARCHAR},
       </if>
       <if test="record.photo != null">
         photo = #{record.photo,jdbcType=VARCHAR},
@@ -247,7 +247,7 @@
         livedNum = #{record.livednum,jdbcType=INTEGER},
       </if>
       <if test="record.status != null">
-        `status` = #{record.status,jdbcType=INTEGER},
+        status = #{record.status,jdbcType=INTEGER},
       </if>
       <if test="record.remark != null">
         remark = #{record.remark,jdbcType=VARCHAR},
@@ -263,7 +263,7 @@
   <update id="updateByExample" parameterType="map">
     update roomtype
     set id = #{record.id,jdbcType=INTEGER},
-      `name` = #{record.name,jdbcType=VARCHAR},
+      name = #{record.name,jdbcType=VARCHAR},
       photo = #{record.photo,jdbcType=VARCHAR},
       price = #{record.price,jdbcType=REAL},
       liveNum = #{record.livenum,jdbcType=INTEGER},
@@ -272,7 +272,7 @@
       avilableNum = #{record.avilablenum,jdbcType=INTEGER},
       bookNum = #{record.booknum,jdbcType=INTEGER},
       livedNum = #{record.livednum,jdbcType=INTEGER},
-      `status` = #{record.status,jdbcType=INTEGER},
+      status = #{record.status,jdbcType=INTEGER},
       remark = #{record.remark,jdbcType=VARCHAR},
       CuStatus = #{record.custatus,jdbcType=INTEGER}
     <if test="_parameter != null">
@@ -283,7 +283,7 @@
     update roomtype
     <set>
       <if test="name != null">
-        `name` = #{name,jdbcType=VARCHAR},
+        name = #{name,jdbcType=VARCHAR},
       </if>
       <if test="photo != null">
         photo = #{photo,jdbcType=VARCHAR},
@@ -310,7 +310,7 @@
         livedNum = #{livednum,jdbcType=INTEGER},
       </if>
       <if test="status != null">
-        `status` = #{status,jdbcType=INTEGER},
+        status = #{status,jdbcType=INTEGER},
       </if>
       <if test="remark != null">
         remark = #{remark,jdbcType=VARCHAR},
@@ -323,7 +323,7 @@
   </update>
   <update id="updateByPrimaryKey" parameterType="com.zwhzzz.Pojo.Roomtype">
     update roomtype
-    set `name` = #{name,jdbcType=VARCHAR},
+    set name = #{name,jdbcType=VARCHAR},
       photo = #{photo,jdbcType=VARCHAR},
       price = #{price,jdbcType=REAL},
       liveNum = #{livenum,jdbcType=INTEGER},
@@ -332,7 +332,7 @@
       avilableNum = #{avilablenum,jdbcType=INTEGER},
       bookNum = #{booknum,jdbcType=INTEGER},
       livedNum = #{livednum,jdbcType=INTEGER},
-      `status` = #{status,jdbcType=INTEGER},
+      status = #{status,jdbcType=INTEGER},
       remark = #{remark,jdbcType=VARCHAR},
       CuStatus = #{custatus,jdbcType=INTEGER}
     where id = #{id,jdbcType=INTEGER}

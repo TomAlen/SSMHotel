@@ -27,10 +27,10 @@
             <!--豪华双人房&#45;&#45;&#45;&#45;预定-->
             </div>
             <ul class="hotel_detail">
-            <li><span>预定数:</span>${roomType.bookNum }</li>
+            <li><span>预定数:</span>${roomType.booknum }</li>
             <li><span>房价:</span>${roomType.price }</li>
-            <li><span>床位数:</span>${roomType.bedNum }</li>
-            <li><span>可住:</span>${roomType.liveNum }人</li>
+            <li><span>床位数:</span>${roomType.bednum }</li>
+            <li><span>可住:</span>${roomType.livenum }人</li>
             <li><span>其他:</span>${roomType.remark }</li>
             </ul>
         </div>
@@ -47,8 +47,8 @@
                     <h3>预定信息</h3>
 
                     <div class="info_group">
-                        <label>入住时间</label><input type="text" name="arriveTime" id="arriveTime" class="datepicker"/>
-						<label>离店时间</label><input type="text" name="leaveTime" id="leaveTime" class="datepicker"/>
+                        <label>入住时间</label><input type="text" name="arrivetime" id="arriveTime" class="datepicker"/>
+						<label>离店时间</label><input type="text" name="leavetime" id="leaveTime" class="datepicker"/>
                     </div>
                     
                     <div class="info_group">
@@ -67,7 +67,7 @@
                         <label>电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;话</label><input type="text" maxlength="11" name="mobile" id="mobile" value="${account.mobile}"/><span class="msg"></span>
                     </div>
 					<div class="info_group">
-                        <label>身份证号</label><input type="text" name="idCard" id="idCard" value="${account.idCard}"/><span class="msg"></span>
+                        <label>身份证号</label><input type="text" name="idcard" id="idCard" value="${account.idcard}"/><span class="msg"></span>
                     </div>
                     <div class="info_group">
                         <label for="remark">留&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;言</label>
@@ -135,7 +135,7 @@
     		url:'book_order',
     		type:'post',
     		dataType:'json',
-    		data:{roomTypeId:'${roomType.id }',name:name,mobile:mobile,idCard:idCard,remark:remark,arriveTime:arriveTime,leaveTime:leaveTime,price:price},
+    		data:{roomtypeid:'${roomType.id }',name:name,mobile:mobile,idcard:idCard,remark:remark,arrivetime:arriveTime,leavetime:leaveTime,price:price},
     		success:function(data){
     			if(data.success == true){
     			    //显示class为malog的定义的标签

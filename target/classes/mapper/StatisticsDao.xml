@@ -13,6 +13,9 @@
     SELECT sum(checkinPrice) as money, DATE_FORMAT(createTime,'%Y-%m') as stat_date from checkinn GROUP BY DATE_FORMAT(createTime,'%Y-%m');
   </select>
 
+  <select id="getStatsByName" parameterType="String" resultType="Map">
+    SELECT sum(price) as money, DATE_FORMAT(createTime,'%Y-%m-%d') as stat_date from book_order  where name = #{name} GROUP BY DATE_FORMAT(createTime,'%Y-%m-%d');
+  </select>
 
 
 

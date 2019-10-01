@@ -96,7 +96,7 @@ public class AccountController {
         User admin = (User) request.getSession().getAttribute("admin");
         if(account == null) {
             result.put("success",false);
-            result.put("msg","添加的信息为空！");
+            result.put("msg","添加的信息不能为空！");
             return result;
         }
         if(isExist(account.getName(),account.getId())) {
@@ -109,7 +109,6 @@ public class AccountController {
             result.put("success",false);
             result.put("msg","姓名的长度必须小于5位！");
         }
-
 
         if(accountService.insertAccount(account) > 0) {
             result.put("success",false);

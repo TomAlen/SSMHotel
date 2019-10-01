@@ -39,6 +39,8 @@ public class BookOrderService {
         BookOrderExample bookOrderExample = new BookOrderExample();
         bookOrderExample.createCriteria()
                 .andIdEqualTo(id);
+        //时间倒叙
+        bookOrderExample.setOrderByClause("createTime desc");
         List<BookOrder> bookOrders = bookOrderDao.selectByExample(bookOrderExample);
         if(bookOrders.size() > 0) {
             return bookOrders.get(0);
@@ -48,5 +50,19 @@ public class BookOrderService {
 
     public int updateBookOrder(BookOrder bookOrder) {
         return bookOrderDao.updateByPrimaryKeySelective(bookOrder);
+    }
+
+    public List<BookOrder> selectByAccountId(Integer id) {
+
+        BookOrderExample example = new BookOrderExample();
+        example.createCriteria()
+                .andAccountidEqualTo(id);
+        example.setOrderByClause("createTime desc");
+        List<BookOrder> bookOrders = bookOrderDao.selectByExample(example);
+        return bookOrders;
+    }
+
+    public int deleteBookOrder(Integer bookOrderId) {
+        return bookOrderDao.deleteByPrimaryKey(bookOrderId);
     }
 }

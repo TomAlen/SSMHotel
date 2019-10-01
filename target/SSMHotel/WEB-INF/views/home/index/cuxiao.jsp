@@ -9,26 +9,50 @@
   <meta name="Description" content="酒店管理系统">
   <link href="/home/css/reservation.css" type="text/css" rel="Stylesheet"/>
   <link href="/home/css/index.css" type="text/css" rel="Stylesheet"/>
-
+    <link rel="stylesheet" href="/layui/css/layui.css" type="text/css"/>
+    <link rel="stylesheet" href="/layui/css/modules/layer/default/layer.css" type="text/css"/>
+    <script src="/home/js/jquery-1.11.3.js"></script>
+    <script src="/layui/js/layui.js"></script>
+    <script src="/layui/js/lay/modules/layer.js"></script>
 <title>毕业设计|酒店管理系统八折促销活动页面</title>
+    <script>
+        /*下拉框展示*/
+        layui.use('element', function(){
+            var element = layui.element;
+        });
+    </script>
 </head>
 <body>
 <!--头部-->
 <div id="c_header"></div>
 <!--主体内容-->
 <section>
+    <ul class="layui-nav" style="margin: 0 128px">
+        <c:if test="${account == null}">
+            <li class="layui-nav-item" style="margin-left: 1030px;">
+                <a href="/home/login">登录<span class="layui-badge-dot"></span></a>
+            </li>
+            <li class="layui-nav-item" style="float: right;">
+                <a href="/home/reg">注册<span class="layui-badge-dot"></span></a>
+            </li>
+        </c:if>
+
+        <c:if test="${account != null}">
+            <li class="layui-nav-item" style="margin-left: 950px;">
+                <a href="account/index">个人中心<span class="layui-badge-dot"></span></a>
+            </li>
+
+            <li class="layui-nav-item" style="float: right">
+                <a href=""><img src="${account.photo}" class="layui-nav-img">${account.name}</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="../account/index">个人订单</a></dd>
+                    <dd><a href="/home/logout">注销登录</a></dd>
+                </dl>
+            </li>
+        </c:if>
+    </ul>
   <div id="subject">
-<p style="float:right;">
-	<c:if test="${account == null }">
-		<a href="/home/login">登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-		<a href="/home/reg">注册</a>&nbsp;
-	</c:if>
-	<c:if test="${account != null }">
-		<font color="red">欢迎您：${account.name }&nbsp;&nbsp;|&nbsp;&nbsp;</font>
-		<a href="/home/account/index">用户中心</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-		<a href="/home/logout">注销登录</a>&nbsp;
-	</c:if>
-</p>
+
     <img src="/home/images\Cu.jpg" alt="" height="256px" width="1200px">
   </div>
 
@@ -69,8 +93,8 @@
               <b><p style="font-size: 17px">${roomType.name }</p></b>
             <p class="sub_txt">${roomType.remark }</p>
           </td>
-          <td>${roomType.liveNum }</td>
-          <td>${roomType.bedNum }</td>
+          <td>${roomType.livenum }</td>
+          <td>${roomType.bednum }</td>
           <td>
               <div style="color:#999;font-family: arial;text-decoration: line-through;">
                       ￥${roomType.prePrice}

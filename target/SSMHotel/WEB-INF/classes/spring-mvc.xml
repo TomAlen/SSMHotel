@@ -35,7 +35,8 @@
     <mvc:resources mapping="/home/**" location="/WEB-INF/statics/home/"/>
     <!--前端资源-->
     <mvc:resources mapping="/echarts/**" location="/WEB-INF/statics/echarts/"/>
-
+    <!--layui资源-->
+    <mvc:resources mapping="/layui/**" location="/WEB-INF/statics/layui/"/>
 
 
 
@@ -61,12 +62,12 @@
             <mvc:exclude-mapping path="/webapp/WEB-INF/statics"/>
             <bean class="com.zwhzzz.interceptor.admin.LoginInterceptor"/>
         </mvc:interceptor>
-      <!--  &lt;!&ndash;前台登录拦截器&ndash;&gt;
+        <!--前台登录拦截器-->
         <mvc:interceptor>
-            &lt;!&ndash;只要是home/account 路径下的都拦截&ndash;&gt;
+            <!--只要是home/account 路径下的都拦截-->
             <mvc:mapping path="/home/account/**"/>
             <bean class="com.zwhzzz.interceptor.home.LoginInterceptor"/>
-        </mvc:interceptor>-->
+        </mvc:interceptor>
     </mvc:interceptors>
 
     <!--  配置文件上传解析器  -->

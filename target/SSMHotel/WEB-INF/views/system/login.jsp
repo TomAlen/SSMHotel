@@ -12,6 +12,11 @@
     <link rel="stylesheet" type="text/css" href="/login/css/reset.css">
     <link href="/home/css/index.css" type="text/css" rel="Stylesheet"/>
     <link href="/home/css/login.css" type="text/css" rel="Stylesheet"/>
+    <link rel="stylesheet" href="/layui/css/layui.css" type="text/css"/>
+    <link rel="stylesheet" href="/layui/css/modules/layer/default/layer.css" type="text/css"/>
+    <script src="/home/js/jquery-1.11.3.js"></script>
+    <script src="/layui/js/layui.js"></script>
+    <script src="/layui/js/lay/modules/layer.js"></script>
 <body>
 
 <div id="particles-js">
@@ -100,15 +105,15 @@
         var password = $("#password").val();
         var cpacha = $("#cpacha").val();
         if (username == '' || username == 'undefined') {
-            alert("请填写用户名！");
+            layer.msg("请填写用户名！")
             return;
         }
         if (password == '' || password == 'undefined') {
-            alert("请填写密码！");
+            layer.msg("请填写密码！");
             return;
         }
         if (cpacha == '' || cpacha == 'undefined') {
-            alert("请填写验证码！");
+            layer.msg("请填写验证码！");
             return;
         }
         addClass(document.querySelector(".login"), "active")
@@ -126,7 +131,10 @@
                     removeClass(document.querySelector(".login"), "active");
                     removeClass(document.querySelector(".sk-rotating-plane"), "active");
                     document.querySelector(".login").style.display = "block";
-                    alert(data.msg);
+                    layer.open({
+                        title:'错误',
+                        content:data.msg
+                    })
                     //重新调用验证码，刷新验证码
                     changeCpacha();
                 }

@@ -13,4 +13,6 @@ public interface StatisticsDao {
 
     List<Map> getStatsByMonths();
 
+    List<Map> getStatsByName(String name);
+
 }

@@ -10,13 +10,13 @@ public class CalMonthUtil {
 
 
     //计算预定订单的天数
-    public static int DaysWithBookOrder(int arriveMonth, int leaveMonth, String arriveTime, String leaveTime) {
+    public static int DaysWithBookOrder(Integer arriveMonth, Integer leaveMonth, String arriveTime, String leaveTime) {
 
         //初始化月份数组
         //31天
-        int LaDaysWithMonth[] = {1, 3, 5, 7, 8, 10, 12};
+        Integer[] LaDaysWithMonth = {1, 3, 5, 7, 8, 10, 12};
         //30天
-        int LunDaysWithMonth[] = {2, 4, 6, 9, 11};
+        Integer[] LunDaysWithMonth = {2, 4, 6, 9, 11};
 
         int days = 0;
 

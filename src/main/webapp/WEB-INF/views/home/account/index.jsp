@@ -25,30 +25,61 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/layui/css/layui.css" type="text/css"/>
+    <link rel="stylesheet" href="/layui/css/modules/layer/default/layer.css" type="text/css"/>
+    <script src="/home/js/jquery-1.11.3.js"></script>
+    <script src="/layui/js/layui.js"></script>
+    <script src="/layui/js/lay/modules/layer.js"></script>
+
 </head>
+<script>
+    /*下拉框展示*/
+    layui.use('element', function(){
+        var element = layui.element;
+    });
+</script>
 <body>
 <!--头部-->
-<div id="c_header"></div>
+<div id="c_header">
+    <ul class="layui-nav" style="margin: 0 128px">
+        <c:if test="${account == null}">
+            <li class="layui-nav-item" style="margin-left: 1030px;">
+                <a href="/home/login">登录<span class="layui-badge-dot"></span></a>
+            </li>
+            <li class="layui-nav-item" style="float: right;">
+                <a href="/home/reg">注册<span class="layui-badge-dot"></span></a>
+            </li>
+        </c:if>
+
+        <c:if test="${account != null}">
+            <li class="layui-nav-item" style="margin-left: 950px;">
+                <a href="../index">首页<span class="layui-badge-dot"></span></a>
+            </li>
+            <li class="layui-nav-item" style="float: right">
+                <a href=""><img src="${account.photo}" class="layui-nav-img">${account.name}</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="account/index">个人订单</a></dd>
+                    <dd><a href="/home/logout">注销登录</a></dd>
+                </dl>
+            </li>
+        </c:if>
+    </ul>
+</div>
 <!--主体-->
-<div id="contain" style="margin-top: 50px;">
+<div id="contain">
     <!--tab选项卡-->
     <ul class="tabs">
-
         <li><a href="../index">首页</a></li>
         <li><a href="#order">我的订单</a></li>
         <li><a href="#info">我的资料</a></li>
         <li><a href="#pwd">修改密码</a></li>
-
     </ul>
 
     <div class="content">
-
         <div class="order" style="display: block;">
             <table>
                 <thead>
                 <tr>
-                    <!--<th colspan="4">订单编号：</th>-->
-                    <!--<th colspan="2" >订单时间:</th>-->
                     <th>房型图片</th>
                     <th>房型</th>
                     <th>入住人</th>
@@ -66,16 +97,16 @@
                 <c:forEach items="${bookOrderList }" var="bookOrder">
                     <tr>
                         <c:forEach items="${roomTypeList }" var="roomType">
-                            <c:if test="${roomType.id == bookOrder.roomTypeId }">
+                            <c:if test="${roomType.id == bookOrder.roomtypeid }">
                                 <td><img src="${roomType.photo }" width="150px" style="margin: 12px"></td>
                                 <td>${roomType.name }</td>
                             </c:if>
                         </c:forEach>
                         <td>${bookOrder.name }</td>
                         <td>${bookOrder.mobile }</td>
-                        <td>${bookOrder.idCard }</td>
+                        <td>${bookOrder.idcard }</td>
                         <td>￥${bookOrder.price}
-                            <c:if test="${bookOrder.cuStatus == 1}">
+                            <c:if test="${bookOrder.custatus == 1}">
                                 <span class="label label-danger" style="margin-left: 7px">促销价</span>
                             </c:if>
                         </td>
@@ -91,7 +122,7 @@
                             </c:if>
                         </td>
                         <td>${bookOrder.checkDays}</td>
-                        <td><fmt:formatDate value="${bookOrder.createTime }" pattern="yyyy-MM-dd HH:mm:ss"/></td>
+                        <td><fmt:formatDate value="${bookOrder.createtime }" pattern="yyyy-MM-dd HH:mm:ss"/></td>
                         <td>${bookOrder.remark }</td>
                         <td>
                             <c:if test="${bookOrder.status == 0}">
@@ -103,8 +134,8 @@
                 </c:forEach>
                 </tbody>
             </table>
-
         </div>
+
         <div class="info">
             <form id="update-info-form">
                 <table style="border:0px;cellspacing:0px;">
@@ -119,7 +150,7 @@
                     </tr>
                     <tr>
                         <td style="border:0px;">身份证号：</td>
-                        <td style="float:left;width:400px;max-width: 820px;border:0px;"><input class="form-control" type="text" value="${account.idCard}" name="idCard"/></td>
+                        <td style="float:left;width:400px;max-width: 820px;border:0px;"><input class="form-control" type="text" value="${account.idcard}" name="idcard"/></td>
                     </tr>
                     <tr>
                         <td style="border:0px;">手机号码：</td>
@@ -165,14 +196,12 @@
                 </tr>
                 </tbody>
             </table>
-
         </div>
     </div>
-
 </div>
+
 <!--底部-->
 <div id="c_footer"></div>
-<script src="/home/js/jquery-1.11.3.js"></script>
 <script>
     $(".tabs").on("click", "li a", function () {
         $(this).addClass("active").parents().siblings().children(".active").removeClass("active");
@@ -188,25 +217,38 @@
                 dataType: 'json',
                 data: $("#update-info-form").serialize(),
                 success: function (data) {
-                    alert(data.msg);
+                    layer.open({
+                        title:'提示',
+                        content:data.msg
+                    })
                 }
             });
         });
+
         //修改密码
         $("#update-password-btn").click(function () {
             var oldPassword = $("#old-password").val();
             var newPassword = $("#new-password").val();
             var renewPassword = $("#renew-password").val();
             if (oldPassword == null || oldPassword == '') {
-                alert('请填写原密码！');
+                    layer.open({
+                        title:'错误',
+                        content:'请填写原密码！'
+                    })
                 return;
             }
             if (newPassword == null || newPassword == '') {
-                alert('请填写新密码！');
+                layer.open({
+                    title:'错误',
+                    content:'请填写新密码！'
+                })
                 return;
             }
             if (newPassword != renewPassword) {
-                alert('两次密码不一致！');
+                layer.open({
+                    title:'错误',
+                    content:'两次密码不一致！'
+                })
                 return;
             }
             $.ajax({
@@ -215,7 +257,10 @@
                 dataType: 'json',
                 data: {oldPassword: oldPassword, newPassword: newPassword},
                 success: function (data) {
-                    alert(data.msg)
+                    layer.open({
+                        title:'错误',
+                        content:data.msg
+                    })
                 }
             });
         });
@@ -229,13 +274,19 @@
                 url: './delete',
                 type: 'post',
                 dataType: 'json',
-                data: {id: bookOrderId},
+                data: {bookOrderId: bookOrderId},
                 success: function (data) {
                     if (data.success == true) {
-                        alert("退订房间成功！");
+                        layer.open({
+                            title:'成功',
+                            content:"退订房间成功！"
+                        })
                         window.location.reload();
                     } else {
-                        alert(data.msg);
+                        layer.open({
+                            title:'错误',
+                            content:data.msg
+                        })
                     }
                 }
             })

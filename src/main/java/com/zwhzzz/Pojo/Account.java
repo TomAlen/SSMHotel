@@ -29,6 +29,12 @@ public class Account implements Serializable {
 
     private Integer status;
 
+    private String laterMobile;
+
+    private String laterRealName;
+
+
+
     private static final long serialVersionUID = 1L;
 
 

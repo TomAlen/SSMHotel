@@ -77,4 +77,13 @@ public class RoomTypeService {
     public void updateStatus(Roomtype roomtype) {
         roomtypeDao.updateByPrimaryKeySelective(roomtype);
     }
+
+    public List<Roomtype> getHomeListByName(String name) {
+        name = "%" + name + "%";
+        RoomtypeExample example = new RoomtypeExample();
+        example.createCriteria()
+                .andNameLike(name);
+        List<Roomtype> roomtypes = roomtypeDao.selectByExample(example);
+        return roomtypes;
+    }
 }

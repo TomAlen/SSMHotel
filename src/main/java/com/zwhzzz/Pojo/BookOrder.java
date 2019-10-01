@@ -39,6 +39,10 @@ public class BookOrder implements Serializable {
 
     private Integer custatus;
 
+    private int CheckDays;//入住天数
+
+    private Roomtype roomtype;
+
     private static final long serialVersionUID = 1L;
 
 

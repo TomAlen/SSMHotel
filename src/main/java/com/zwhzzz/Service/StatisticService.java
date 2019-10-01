@@ -29,4 +29,7 @@ public class StatisticService {
         return statisticsDao.getStatsByMonths();
     }
 
+    public List<Map> getStatsByName(String name) {
+        return statisticsDao.getStatsByName(name);
+    }
 }
