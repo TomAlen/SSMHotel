@@ -353,27 +353,6 @@
     where id = #{id,jdbcType=INTEGER}
   </update>
 
-  <select id="getBookOrderList" parameterType="com.zwhzzz.DTO.BookOrderDTO" resultType="BookOrder">
-    select * from book_order where 1 = 1
-    <if test="name != null">
-      and name like  '%${name}%'
-    </if>
-    <if test="idCard  != null">
-      and idCard like  '%${idCard}%'
-    </if>
-    <if test="mobile != null">
-      and mobile like  '%${mobile}%'
-    </if>
-    <if test="accountId != null">
-      and accountId = #{accountId}
-    </if>
-    <if test="roomTypeId != null">
-      and roomTypeId = #{roomTypeId}
-    </if>
-    <if test="status != null">
-      and status = #{status}
-    </if>
-  </select>
 
   <select id="getList" parameterType="Map" resultType="BookOrder">
     select * from book_order where 1 = 1

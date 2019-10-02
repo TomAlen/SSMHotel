@@ -12,7 +12,6 @@
   <link href="/home/css/login.css" type="text/css" rel="Stylesheet" />
   <link rel="stylesheet" href="/layui/css/layui.css" type="text/css"/>
   <link rel="stylesheet" href="/layui/css/modules/layer/default/layer.css" type="text/css"/>
-
  </head>
  <body>
        <header>
@@ -49,8 +48,8 @@
 	   </section>
        <%@include file="../common/footer.jsp"%>
 	  <script src="/home/js/jquery-1.11.3.js"></script>
-	   <script src="/layui/js/layui.js"></script>
-	   <script src="/layui/js/lay/modules/layer.js"></script>
+	   <script src="/layui/layui.js"></script>
+	   <script src="/layui/lay/modules/layer.js"></script>
 <script>
 function changeVcode(){
 	$("#cpacha-img").attr("src",'../system/get_cpacha?vl=4&w=120&h=33&type=loginCpacha&t=' + new Date().getTime());

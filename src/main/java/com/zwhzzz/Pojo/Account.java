@@ -34,7 +34,6 @@ public class Account implements Serializable {
     private String laterRealName;
 
 
-
     private static final long serialVersionUID = 1L;
 
 

@@ -82,8 +82,8 @@
     </div>
 </div>
 <script src="/home/js/jquery-1.11.3.js"></script>
-<script src="/layui/js/layui.js"></script>
-<script src="/layui/js/lay/modules/layer.js"></script>
+<script src="/layui/layui.js"></script>
+<script src="/layui/lay/modules/layer.js"></script>
 <script>
 
     $('#btn-reg').click(function () {

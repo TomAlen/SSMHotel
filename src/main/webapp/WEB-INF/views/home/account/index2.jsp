@@ -13,11 +13,9 @@
     <link rel="stylesheet" href="/layui/css/layui.css" type="text/css"/>
     <link rel="stylesheet" href="/layui/css/modules/layer/default/layer.css" type="text/css"/>
     <script src="/home/js/jquery-1.11.3.js"></script>
-    <script src="/layui/js/layui.js"></script>
-    <script src="/layui/js/lay/modules/layer.js"></script>
+    <script src="/layui/layui.js"></script>
+    <script src="/layui/lay/modules/layer.js"></script>
     <script type="text/javascript" src="/echarts/js/echarts.common.min.js"></script>
-
-
 </head>
 <script>
     /*下拉框展示*/
@@ -52,11 +50,11 @@
             <ul class="layui-nav layui-nav-tree" lay-filter="test" id="tab-click">
 
                 <li class="layui-nav-item layui-nav-itemed">
-                   <a class="" href="../index">首页</a>
+                    <a class="" href="../index">首页</a>
                 </li>
 
-                <li class="layui-nav-item" active>
-                    <a href="#order">个人订单</a>
+                <li class="layui-nav-item">
+                    <a href="#order" id="order-active">个人订单</a>
                 </li>
 
                 <li class="layui-nav-item">
@@ -120,7 +118,9 @@
                         <td><fmt:formatDate value="${bookOrder.createtime }" pattern="yyyy-MM-dd HH:mm:ss"/></td>
                         <td>${bookOrder.remark }</td>
                         <td>
-                            <button class="layui-btn layui-btn-disabled">退订</button>
+                            <c:if test="${bookOrder.status != 0}">
+                                <button class="layui-btn layui-btn-disabled">退订</button>
+                            </c:if>
                             <c:if test="${bookOrder.status == 0}">
                                 <button id="deleteOrder" type="button" class="layui-btn layui-btn-danger"
                                         onclick="deleteOrder()">退订
@@ -197,13 +197,17 @@
 
                                 <div class="layui-form-item">
                                     <div class="layui-input-block">
-                                        <button class="layui-btn layui-btn-radius layui-btn-normal" id="update-info" style="float: right;margin-right: 31px;">立即提交</button>
+                                        <button class="layui-btn layui-btn-radius layui-btn-normal" id="update-info"
+                                                style="float: right;margin-right: 31px;">立即提交
+                                        </button>
                                     </div>
                                 </div>
                             </form>
                         </div>
                         <div class="layui-col-md1">
-                            <button class="layui-btn layui-btn-radius layui-btn-danger" style="margin-top: 289px;" id="update-password">修改密码</button>
+                            <button class="layui-btn layui-btn-radius layui-btn-danger" style="margin-top: 289px;"
+                                    id="update-password">修改密码
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -211,8 +215,9 @@
         </div>
         <div id="stats-bookorder" class="orderStats" style="display: none">
             <div class="layui-card">
-                <div class="layui-card-header" style="margin: 0 auto;text-align: center;margin-top: 16px;"><b style="font-size: 31px">个人账单统计</b></div>
-                <div class="layui-card-body" >
+                <div class="layui-card-header" style="margin: 0 auto;text-align: center;margin-top: 16px;"><b
+                        style="font-size: 31px">个人账单统计</b></div>
+                <div class="layui-card-body">
                     <div class="layui-col-md7">
                         <div id="charts-div" style="width: 750px;height:380px;">
 
@@ -221,17 +226,18 @@
                     <div class="layui-col-md5" style="margin-top: 47px;">
                         <ul class="layui-timeline">
                             <c:forEach items="${bookOrderList }" var="bookOrder">
-                            <li class="layui-timeline-item">
-                                <i class="layui-icon layui-timeline-axis">&#xe633;</i>
-                                <div class="layui-timeline-content layui-text">
-                                    <h3 class="layui-timeline-title"><fmt:formatDate pattern="yyyy-MM-dd" value="${bookOrder.createtime}"/></h3>
-                                    <p>
-                                        <b>入住时间：  ${bookOrder.arrivetime} ~ ${bookOrder.leavetime}</b>
-                                        <br>入住房型： ${bookOrder.roomtype.name}
-                                        <br>消费金额： <span style="color: #FFB800">￥${bookOrder.price}</span>
-                                    </p>
-                                </div>
-                            </li>
+                                <li class="layui-timeline-item">
+                                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                                    <div class="layui-timeline-content layui-text">
+                                        <h3 class="layui-timeline-title"><fmt:formatDate pattern="yyyy-MM-dd"
+                                                                                         value="${bookOrder.createtime}"/></h3>
+                                        <p>
+                                            <b>入住时间： ${bookOrder.arrivetime} ~ ${bookOrder.leavetime}</b>
+                                            <br>入住房型： ${bookOrder.roomtype.name}
+                                            <br>消费金额： <span style="color: #FFB800">￥${bookOrder.price}</span>
+                                        </p>
+                                    </div>
+                                </li>
                             </c:forEach>
                         </ul>
 
@@ -245,21 +251,24 @@
         <div class="layui-form-item">
             <label class="layui-form-label">原密码</label>
             <div class="layui-input-inline">
-                <input type="password" id="old-password" required lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                <input type="password" id="old-password" required lay-verify="required" placeholder="请输入密码"
+                       autocomplete="off" class="layui-input">
             </div>
         </div>
 
         <div class="layui-form-item">
             <label class="layui-form-label">新密码</label>
             <div class="layui-input-inline">
-                <input type="password" id="new-password" required lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                <input type="password" id="new-password" required lay-verify="required" placeholder="请输入密码"
+                       autocomplete="off" class="layui-input">
             </div>
         </div>
 
         <div class="layui-form-item">
             <label class="layui-form-label">确认新密码</label>
             <div class="layui-input-inline">
-                <input type="password" id="renew-password" required lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                <input type="password" id="renew-password" required lay-verify="required" placeholder="请输入密码"
+                       autocomplete="off" class="layui-input">
             </div>
         </div>
     </div>
@@ -271,6 +280,11 @@
 
 
 <script>
+
+    $(document).ready(function () {
+        $('#order-active').addClass("active");
+    })
+
 
     $('#tab-click').on('click', 'li a', function () {
         $(this).addClass("active").parents().siblings().children(".active").removeClass("active");
@@ -290,10 +304,10 @@
                 data: data,
                 success: function (data) {
                     console.log(data)
-                    if(data.success == true){
+                    if (data.success == true) {
                         layer.msg("修改成功！");
                         window.location.href = 'index'
-                    }else {
+                    } else {
                         layer.open({
                             title: '错误',
                             content: data.msg
@@ -309,10 +323,10 @@
                 type: 1,
                 title: '密码修改',
                 area: ['400px', '300px'],
-                shadeClose: false, //点击遮罩关闭
+                shadeClose: false,//点击遮罩关闭
                 content: $('#edit-password-model'),
                 btn: ['修改', '取消'],
-                yes:function (index, layero) {
+                yes: function (index, layero) {
                     var oldPassword = $("#old-password").val();
                     var newPassword = $("#new-password").val();
                     var renewPassword = $("#renew-password").val();
@@ -334,27 +348,28 @@
                         dataType: 'json',
                         data: {oldPassword: oldPassword, newPassword: newPassword},
                         success: function (data) {
-                            if(data.success == true) {
+                            if (data.success == true) {
                                 layer.msg(data.msg);
                                 $("#old-password").val('');
                                 $("#new-password").val('');
                                 $("#renew-password").val('');
-                            }else{
+                            } else {
                                 layer.open({
-                                    title:'提示',
-                                    content:data.msg
+                                    title: '提示',
+                                    content: data.msg
                                 })
                             }
                         }
                     });
                 },
-                success:function() {
-                    $(".layui-layer-page").css("z-index","198910151");
+                success: function () {
+                    $(".layui-layer-page").css("z-index", "198910151");
                 },
-                end:function () {
+                end: function () {
                     //删除遮罩元素
-                    $(".layui-layer-shade").remove()
-                    $('#edit-password-model').css('display','none');
+                   // $(".layui-layer-shade").remove()
+                    $(".layui-layer-shade").css('display','none');
+                    $('#edit-password-model').css('display', 'none');
                 }
             })
 
@@ -411,7 +426,6 @@
     });
 
 
-
     function deleteOrder() {
         layer.confirm("亲～  退订了就不能入住了呦～", {btn: ['确定', '取消'], title: "提示"}, function () {
             var bookOrderId = $('#bookOrderId').val();
@@ -437,6 +451,7 @@
             })
         });
     }
+
     // 基于准备好的dom，初始化echarts实例
     var myChart = echarts.init(document.getElementById('charts-div'));
 

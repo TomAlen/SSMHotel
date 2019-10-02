@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="/layui/css/layui.css" type="text/css"/>
     <link rel="stylesheet" href="/layui/css/modules/layer/default/layer.css" type="text/css"/>
     <script src="/home/js/jquery-1.11.3.js"></script>
-    <script src="/layui/js/layui.js"></script>
-    <script src="/layui/js/lay/modules/layer.js"></script>
+    <script src="/layui/layui.js"></script>
+    <script src="/layui/lay/modules/layer.js"></script>
 <title>毕业设计|酒店管理系统八折促销活动页面</title>
     <script>
         /*下拉框展示*/

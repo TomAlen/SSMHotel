@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="/layui/css/layui.css" type="text/css"/>
     <link rel="stylesheet" href="/layui/css/modules/layer/default/layer.css" type="text/css"/>
     <script src="/home/js/jquery-1.11.3.js"></script>
-    <script src="/layui/js/layui.js"></script>
-    <script src="/layui/js/lay/modules/layer.js"></script>
+    <script src="/layui/layui.js"></script>
+    <script src="/layui/lay/modules/layer.js"></script>
 <body>
 
 <div id="particles-js">
@@ -70,7 +70,7 @@
 </div>
 
 <!-- scripts -->
-<%--<script src="/login/js/particles.min.js"></script>--%>
+<script src="/login/js/particles.min.js"></script>
 <script src="/login/js/app.js"></script>
 <script src="/login/js/jquery-1.8.0.min.js"></script>
 <script type="text/javascript">

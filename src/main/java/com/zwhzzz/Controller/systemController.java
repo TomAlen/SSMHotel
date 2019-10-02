@@ -1,7 +1,6 @@
 package com.zwhzzz.Controller;
 
 import com.github.pagehelper.util.StringUtil;
-import com.zwhzzz.Mapper.MenuDao;
 import com.zwhzzz.Pojo.Authority;
 import com.zwhzzz.Pojo.Menu;
 import com.zwhzzz.Pojo.Role;
@@ -9,7 +8,6 @@ import com.zwhzzz.Pojo.User;
 import com.zwhzzz.Service.*;
 import com.zwhzzz.Util.CpachaUtil;
 import com.zwhzzz.Util.MenuUtil;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

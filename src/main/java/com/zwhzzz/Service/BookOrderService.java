@@ -1,6 +1,5 @@
 package com.zwhzzz.Service;
 
-import com.zwhzzz.DTO.BookOrderDTO;
 import com.zwhzzz.Mapper.BookOrderDao;
 import com.zwhzzz.Pojo.BookOrder;
 import com.zwhzzz.Pojo.BookOrderExample;
@@ -20,11 +19,6 @@ public class BookOrderService {
 
     public BookOrderService(BookOrderDao bookOrderDao) {
         this.bookOrderDao = bookOrderDao;
-    }
-
-
-    public List<BookOrder> getBookOrderList(BookOrderDTO bookOrderDTO) {
-        return bookOrderDao.getBookOrderList(bookOrderDTO);
     }
 
     public List<BookOrder> getList(Map<String,Object> queryMap) {

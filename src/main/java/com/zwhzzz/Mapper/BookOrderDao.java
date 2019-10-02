@@ -1,13 +1,11 @@
 package com.zwhzzz.Mapper;
 
-import com.zwhzzz.DTO.BookOrderDTO;
 import com.zwhzzz.Pojo.BookOrder;
 import com.zwhzzz.Pojo.BookOrderExample;
 import java.util.List;
 import java.util.Map;
 
 import org.apache.ibatis.annotations.Param;
-import org.springframework.stereotype.Repository;
 
 
 public interface BookOrderDao {
@@ -32,8 +30,6 @@ public interface BookOrderDao {
     int updateByPrimaryKeySelective(BookOrder record);
 
     int updateByPrimaryKey(BookOrder record);
-
-    List<BookOrder> getBookOrderList(BookOrderDTO bookOrderDTO);
 
     List<BookOrder> getList(Map<String,Object> queryMap);
 }
