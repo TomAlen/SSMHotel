@@ -7,252 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5cc3d300-6933-4b73-bd1f-41e8b75102d1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/home/images/index-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/css/layui.mobile.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/font/iconfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/font/iconfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/font/iconfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/font/iconfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/font/iconfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/10.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/11.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/12.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/13.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/14.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/15.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/16.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/17.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/18.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/19.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/20.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/21.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/22.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/23.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/24.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/25.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/26.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/27.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/28.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/29.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/30.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/31.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/32.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/33.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/34.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/35.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/36.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/37.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/38.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/39.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/4.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/40.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/41.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/42.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/43.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/44.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/45.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/46.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/47.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/48.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/49.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/5.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/50.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/51.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/52.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/53.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/54.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/55.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/56.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/57.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/58.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/59.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/6.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/60.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/61.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/62.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/63.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/64.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/65.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/66.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/67.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/68.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/69.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/7.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/70.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/71.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/8.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/images/face/9.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/css/layui.mobile.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/font/iconfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/font/iconfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/font/iconfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/font/iconfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/font/iconfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/10.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/11.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/12.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/13.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/14.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/15.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/16.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/17.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/18.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/19.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/20.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/21.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/22.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/23.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/24.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/25.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/26.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/27.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/28.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/29.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/30.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/31.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/32.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/33.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/34.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/35.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/36.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/37.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/38.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/39.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/4.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/40.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/41.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/42.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/43.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/44.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/45.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/46.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/47.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/48.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/49.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/5.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/50.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/51.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/52.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/53.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/54.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/55.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/56.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/57.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/58.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/59.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/6.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/60.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/61.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/62.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/63.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/64.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/65.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/66.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/67.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/68.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/69.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/7.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/70.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/71.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/8.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/images/face/9.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zwhzzz/Controller/systemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zwhzzz/Controller/systemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zwhzzz/DTO/BookOrderDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zwhzzz/Mapper/BookOrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zwhzzz/Mapper/BookOrderDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zwhzzz/Pojo/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zwhzzz/Pojo/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zwhzzz/Service/BookOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zwhzzz/Service/BookOrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/BookOrderDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/BookOrderDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/css/layer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/js/all.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/lay/all.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/js/lay/all-mobile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/lay/all-mobile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/js/lay/all.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/lay/all.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/js/lay/modules/carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/lay/modules/carousel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/js/lay/modules/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/lay/modules/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/js/lay/modules/colorpicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/lay/modules/colorpicker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/js/lay/modules/element.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/lay/modules/element.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/js/lay/modules/flow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/lay/modules/flow.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/js/lay/modules/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/lay/modules/form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/js/lay/modules/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/lay/modules/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/js/lay/modules/laydate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/lay/modules/laydate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/js/lay/modules/layedit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/lay/modules/layedit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/js/lay/modules/layer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/js/lay/modules/laypage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/lay/modules/laypage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/js/lay/modules/laytpl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/lay/modules/laytpl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/js/lay/modules/mobile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/lay/modules/mobile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/js/lay/modules/mobile/layer-mobile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/lay/modules/mobile/layer-mobile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/js/lay/modules/mobile/layim-mobile-open.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/lay/modules/mobile/layim-mobile-open.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/js/lay/modules/mobile/zepto.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/lay/modules/mobile/zepto.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/js/lay/modules/rate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/lay/modules/rate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/js/lay/modules/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/lay/modules/slider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/js/lay/modules/table.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/lay/modules/table.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/js/lay/modules/transfer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/lay/modules/transfer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/js/lay/modules/tree.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/lay/modules/tree.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/js/lay/modules/upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/lay/modules/upload.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/js/lay/modules/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/lay/modules/util.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/js/layer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/lay/modules/layer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/js/layui.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/layui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/login/images/bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/login/images/bg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/account/index2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/account/index2.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/index/cuxiao.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/index/cuxiao.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/index/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/index/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/index/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/index/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/index/reg.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/index/reg.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/system/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/system/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/classes/com/zwhzzz/DTO/BookOrderDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/classes/com/zwhzzz/Mapper/BookOrderDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/classes/com/zwhzzz/Mapper/BookOrderDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/classes/com/zwhzzz/Service/BookOrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/classes/com/zwhzzz/Service/BookOrderService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/classes/mapper/BookOrderDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/classes/mapper/BookOrderDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/home/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/home/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/css/layer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/js/all.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/js/lay/all-mobile.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/lay/all-mobile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/js/lay/all.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/js/lay/modules/carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/lay/modules/carousel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/js/lay/modules/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/lay/modules/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/js/lay/modules/colorpicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/lay/modules/colorpicker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/js/lay/modules/element.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/lay/modules/element.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/js/lay/modules/flow.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/lay/modules/flow.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/js/lay/modules/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/lay/modules/form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/js/lay/modules/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/lay/modules/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/js/lay/modules/laydate.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/lay/modules/laydate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/js/lay/modules/layedit.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/lay/modules/layedit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/js/lay/modules/layer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/js/lay/modules/laypage.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/lay/modules/laypage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/js/lay/modules/laytpl.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/lay/modules/laytpl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/js/lay/modules/mobile.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/lay/modules/mobile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/js/lay/modules/mobile/layer-mobile.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/lay/modules/mobile/layer-mobile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/js/lay/modules/mobile/layim-mobile-open.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/lay/modules/mobile/layim-mobile-open.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/js/lay/modules/mobile/zepto.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/lay/modules/mobile/zepto.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/js/lay/modules/rate.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/lay/modules/rate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/js/lay/modules/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/lay/modules/slider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/js/lay/modules/table.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/lay/modules/table.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/js/lay/modules/transfer.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/lay/modules/transfer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/js/lay/modules/tree.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/lay/modules/tree.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/js/lay/modules/upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/lay/modules/upload.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/js/lay/modules/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/lay/modules/util.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/js/layer.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/lay/modules/layer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/js/layui.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/layui/layui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/login/images/bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/statics/login/images/bg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/views/home/account/index2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/views/home/account/index2.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/views/home/index/cuxiao.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/views/home/index/cuxiao.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/views/home/index/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/views/home/index/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/views/home/index/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/views/home/index/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/views/home/index/reg.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/views/home/index/reg.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/views/system/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/views/system/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zwhzzz/DTO/BookOrderDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zwhzzz/Mapper/BookOrderDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zwhzzz/Mapper/BookOrderDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zwhzzz/Service/BookOrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zwhzzz/Service/BookOrderService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/BookOrderDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/BookOrderDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -337,8 +92,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="384">
-                <caret line="16" column="80" selection-start-line="16" selection-start-column="80" selection-end-line="16" selection-end-column="80" />
+              <first_editor relative-caret-position="120">
+                <caret line="5" column="90" selection-start-line="5" selection-start-column="90" selection-end-line="5" selection-end-column="90" />
               </first_editor>
               <second_editor />
             </state>
@@ -774,18 +529,27 @@
       <workItem from="1569979285336" duration="185000" />
       <workItem from="1569979503096" duration="169000" />
       <workItem from="1569979696024" duration="981000" />
-      <workItem from="1569980700336" duration="2976000" />
+      <workItem from="1569980700336" duration="3676000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164449000" />
+    <option name="totallyTimeSpent" value="165149000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-1" width="1922" height="1027" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49845678" visible="true" weight="0.24839744" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49845678" visible="true" weight="0.24839744" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -799,16 +563,16 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.18857142" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32914287" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.15085714" />
-      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Spring" order="8" weight="0.6925714" />
       <window_info anchor="bottom" id="Database Console" order="9" weight="0.10996564" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.22742857" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.22742857" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.32914287" />
       <window_info anchor="bottom" id="Database Changes" order="14" weight="0.32914287" />
-      <window_info anchor="bottom" id="Version Control" order="15" visible="true" weight="0.034285713" />
+      <window_info anchor="bottom" id="Version Control" order="15" weight="0.472" />
       <window_info anchor="bottom" id="Messages" order="16" weight="0.13942857" />
       <window_info anchor="right" id="Preview" order="0" weight="0.32976446" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
@@ -1225,8 +989,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="384">
-            <caret line="16" column="80" selection-start-line="16" selection-start-column="80" selection-end-line="16" selection-end-column="80" />
+          <first_editor relative-caret-position="120">
+            <caret line="5" column="90" selection-start-line="5" selection-start-column="90" selection-end-line="5" selection-end-column="90" />
           </first_editor>
           <second_editor />
         </state>
