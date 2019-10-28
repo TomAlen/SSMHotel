@@ -1,0 +1,66 @@
+INSERT INTO SSMHotel.menu (parentId,name,url,icon) VALUES 
+(0,'系统设置','','icon-advancedsettings2')
+,(20,'菜单管理','../admin/menu/list','icon-book-open')
+,(20,'角色管理','../admin/role/list','icon-user-home')
+,(0,'用户管理','','icon-user-green')
+,(24,'用户列表','../admin/user/list','icon-user-star')
+,(22,'添加','openAdd()','icon-add')
+,(22,'编辑','openEdit()','icon-pencil')
+,(22,'删除','remove()','icon-cross')
+,(22,'添加菜单','openAddMenu()','icon-add1')
+,(23,'添加','openAdd()','icon-add')
+;
+INSERT INTO SSMHotel.menu (parentId,name,url,icon) VALUES 
+(23,'编辑','openEdit()','icon-pencil')
+,(23,'删除','remove()','icon-cross-octagon')
+,(25,'添加','openAdd()','icon-add1')
+,(25,'编辑','openEdit()','icon-pencil-go')
+,(25,'删除','remove()','icon-DeleteRed')
+,(0,'日志管理','../admin/log/list','icon-page-white-text')
+,(42,'日志列表','../admin/log/list','icon-page-white')
+,(43,'添加','openAdd()','icon-add')
+,(43,'删除','remove()','icon-delete3')
+,(20,'修改密码','list','icon-lock')
+;
+INSERT INTO SSMHotel.menu (parentId,name,url,icon) VALUES 
+(47,'修改密码','submitEdit()','icon-lock')
+,(0,'楼层管理','','icon-house')
+,(49,'楼层管理','../admin/floor/list','icon-house')
+,(50,'添加','openAdd()','icon-add')
+,(50,'编辑','openEdit()','icon-pencil')
+,(50,'删除','remove()','icon-cross')
+,(0,'房型管理','','icon-house-star')
+,(54,'房型管理','../admin/RoomType/list','icon-house-star')
+,(55,'添加','openAdd()','icon-add1')
+,(55,'编辑','openEdit()','icon-paintbrush')
+;
+INSERT INTO SSMHotel.menu (parentId,name,url,icon) VALUES 
+(55,'删除','remove()','icon-DeleteRed')
+,(0,'房间管理','','icon-house-key')
+,(62,'房间管理','../admin/room/list','icon-house-key')
+,(63,'添加','openAdd()','icon-add1')
+,(63,'编辑','openEdit()','icon-pencil')
+,(63,'删除','remove()','icon-delete3')
+,(0,'客户管理','','icon-user')
+,(67,'客户管理','../admin/account/list','icon-user-business-boss')
+,(68,'添加','openAdd()','icon-add')
+,(68,'编辑','openEdit()','icon-bullet-edit')
+;
+INSERT INTO SSMHotel.menu (parentId,name,url,icon) VALUES 
+(68,'删除','remove()','icon-delete3')
+,(0,'预定订单管理','','icon-world-delete')
+,(72,'预定订单列表','../admin/book_order/list','icon-world-go')
+,(73,'添加预定','openAdd()','icon-add')
+,(73,'编辑预定','openEdit()','icon-paintbrush')
+,(0,'入住管理','','icon-images')
+,(76,'入住列表','../admin/checkin/list','icon-page-copy')
+,(77,'登记入住','openAdd()','icon-add')
+,(77,'编辑入住','openEdit()','icon-pencil')
+,(77,'登记退房','openCheckOut()','icon-smartphone-go')
+;
+INSERT INTO SSMHotel.menu (parentId,name,url,icon) VALUES 
+(0,'统计分析','','icon-chart-bar')
+,(81,'统计图表','../admin/stats/stats','icon-chart-curve')
+,(82,'按日统计','statsByDays()','icon-chart-line-edit')
+,(82,'按月统计','statsByMonth()','icon-chart-line-edit')
+;
