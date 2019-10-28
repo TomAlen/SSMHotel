@@ -16,9 +16,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
+import java.io.File;
+import java.io.IOException;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -182,19 +185,14 @@ public class HomeAccountController {
         bookOrder.setAccountid(account.getId());
         //设置时间
         bookOrder.setCreatetime(new Date());
-        //设置状态为预定中八
+        //设置状态为预定
         bookOrder.setStatus(0);
-
         String arriveTime = bookOrder.getArrivetime();
         String leaveTime = bookOrder.getLeavetime();
-
         Integer  arriveMonth = Integer.parseInt(arriveTime.substring(5, 7));
         Integer leaveMonth = Integer.parseInt(leaveTime.substring(5, 7));
-
         int days = CalMonthUtil.DaysWithBookOrder(arriveMonth, leaveMonth, arriveTime, leaveTime);
-
         bookOrder.setPrice(bookOrder.getPrice() * days);
-
         if (bookOrderService.insertBookOrder(bookOrder) > 0) {
             result.put("success", false);
             result.put("msg", "添加预定订单失败！");

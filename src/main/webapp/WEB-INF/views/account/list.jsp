@@ -37,7 +37,7 @@
             </tr>
             <tr>
                 <td width="60" align="right">头像图片:</td>
-                <td><input type="text" id="add-photo" name="photo" value="/easyui/images/user.jpg" readonly="readonly" class="wu-text " /></td>
+                <td><input type="text" id="add-photo" name="photo" value="/easyui/images/user.jpg" readonly="readonly" class="wu-text "/></td>
             </tr>
             <tr>
                 <td align="right">名称:</td>
@@ -83,7 +83,7 @@
             <tr>
                 <td width="60" align="right">头像预览:</td>
                 <td valign="middle">
-                    <img id="edit-preview-photo" style="float:left;" src="/easyui/images/user.jpg" width="100px">
+                    <img id="edit-preview-photo" style="float:left;" width="100px">
                     <a style="float:left;margin-top:40px;" href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-upload" onclick="uploadPhoto()" plain="true">上传图片</a>
                 </td>
             </tr>
@@ -179,7 +179,6 @@
 
     function uploadPhoto(){
         $("#photo-file").click();
-
     }
 	
 	

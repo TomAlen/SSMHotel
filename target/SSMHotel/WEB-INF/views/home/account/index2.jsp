@@ -97,9 +97,13 @@
                             </c:if>
                         </c:forEach>
                         <td>${bookOrder.name }</td>
-                        <td>${bookOrder.mobile }</td>
-                        <td>￥${bookOrder.price}
+                        <td>${account.laterMobile }</td>
+                        <td>
+                            <c:if test="${bookOrder.custatus != 1}">
+                                ￥${bookOrder.price}
+                            </c:if>
                             <c:if test="${bookOrder.custatus == 1}">
+                                <span style="color: red">￥${bookOrder.price}</span>
                                 <span class="layui-badge" style="margin-left: 7px">促销</span>
                             </c:if>
                         </td>
@@ -142,10 +146,7 @@
                     <div class="layui-col-md12">
                         <div class="layui-col-md5" style="margin-left: 49px;">
                             <p>
-                                <img src="${account.photo}" width="25%">
-                            </p>
-                            <p style="margin-left: 36px;margin-top: 10px;font-size: 12px">
-                                <a href="" style="text-align: center">修改头像</a>
+                                <img src="${account.photo}" id="avatarUrl" width="25%">
                             </p>
                         </div>
                         <div class="layui-col-md4" style="margin-top: 30px;margin-left: -331px;font-size: 13px;">
@@ -219,7 +220,7 @@
                         style="font-size: 31px">个人账单统计</b></div>
                 <div class="layui-card-body">
                     <div class="layui-col-md7">
-                        <div id="charts-div" style="width: 750px;height:380px;">
+                        <div id="charts-div" style="width: 750px;height:380px;margin-top: 43px;">
 
                         </div>
                     </div>
@@ -272,18 +273,13 @@
             </div>
         </div>
     </div>
-
     <div class="layui-footer" align="center">
         © 钟炜宏 - 毕业设计
     </div>
 </div>
 
-
 <script>
 
-    $(document).ready(function () {
-        $('#order-active').addClass("active");
-    })
 
 
     $('#tab-click').on('click', 'li a', function () {
@@ -292,7 +288,6 @@
         href = href.slice(1);
         var $div = $("div.layui-body>div." + href);
         $div.show().siblings().hide();
-
 
         //修改个人信息
         $("#update-info").click(function () {
@@ -353,7 +348,8 @@
                                 $("#old-password").val('');
                                 $("#new-password").val('');
                                 $("#renew-password").val('');
-                            } else {
+                            }
+                            else {
                                 layer.open({
                                     title: '提示',
                                     content: data.msg
@@ -367,8 +363,8 @@
                 },
                 end: function () {
                     //删除遮罩元素
-                   // $(".layui-layer-shade").remove()
-                    $(".layui-layer-shade").css('display','none');
+                    // $(".layui-layer-shade").remove()
+                    $(".layui-layer-shade").css('display', 'none');
                     $('#edit-password-model').css('display', 'none');
                 }
             })
@@ -383,35 +379,102 @@
                 dataType: 'json',
                 success: function (data) {
                     if (data.success == true) {
+                        var dataAxis = data.content.stat_date;
+                        var data = data.content.money;
+                        var yMax = 800;
+                        var dataShadow = [];
+
+                        for (var i = 0; i < data.length; i++) {
+                            dataShadow.push(yMax);
+                        }
+
                         var option = {
+                            title: {
+                                text: '订单金额统计',
+                            },
                             xAxis: {
-                                type: 'category',
-                                data: data.content.stat_date
-                            },
-                            yAxis: {
-                                type: 'value'
-                            },
-                            series: [{
-                                data: data.content.money,
-                                type: 'line',
-                                symbol: 'triangle',
-                                symbolSize: 20,
-                                lineStyle: {
-                                    normal: {
-                                        color: 'green',
-                                        width: 4,
-                                        type: 'dashed'
+                                data: dataAxis,
+                                axisLabel: {
+                                    inside: true,
+                                    textStyle: {
+                                        color: '#fff'
                                     }
                                 },
-                                itemStyle: {
-                                    normal: {
-                                        borderWidth: 3,
-                                        borderColor: 'yellow',
-                                        color: 'blue'
+                                axisTick: {
+                                    show: false
+                                },
+                                axisLine: {
+                                    show: false
+                                },
+                                z: 10
+                            },
+                            yAxis: {
+                                axisLine: {
+                                    show: false
+                                },
+                                axisTick: {
+                                    show: false
+                                },
+                                axisLabel: {
+                                    textStyle: {
+                                        color: '#999'
                                     }
                                 }
-                            }]
+                            },
+                            dataZoom: [
+                                {
+                                    type: 'inside'
+                                }
+                            ],
+                            series: [
+                                { // For shadow
+                                    type: 'bar',
+                                    itemStyle: {
+                                        normal: {color: 'rgba(0,0,0,0.05)'}
+                                    },
+                                    barGap: '-100%',
+                                    barCategoryGap: '40%',
+                                    data: dataShadow,
+                                    animation: false
+                                },
+                                {
+                                    type: 'bar',
+                                    itemStyle: {
+                                        normal: {
+                                            color: new echarts.graphic.LinearGradient(
+                                                0, 0, 0, 1,
+                                                [
+                                                    {offset: 0, color: '#83bff6'},
+                                                    {offset: 0.5, color: '#188df0'},
+                                                    {offset: 1, color: '#188df0'}
+                                                ]
+                                            )
+                                        },
+                                        emphasis: {
+                                            color: new echarts.graphic.LinearGradient(
+                                                0, 0, 0, 1,
+                                                [
+                                                    {offset: 0, color: '#2378f7'},
+                                                    {offset: 0.7, color: '#2378f7'},
+                                                    {offset: 1, color: '#83bff6'}
+                                                ]
+                                            )
+                                        }
+                                    },
+                                    data: data
+                                }
+                            ]
                         };
+                        var zoomSize = 6;
+                        myChart.on('click', function (params) {
+                            console.log(dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)]);
+                            myChart.dispatchAction({
+                                type: 'dataZoom',
+                                startValue: dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)],
+                                endValue: dataAxis[Math.min(params.dataIndex + zoomSize / 2, data.length - 1)]
+                            });
+                        });
+
                         myChart.setOption(option)
                     } else {
                         layer.open({

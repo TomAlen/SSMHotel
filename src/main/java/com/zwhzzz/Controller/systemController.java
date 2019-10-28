@@ -1,10 +1,7 @@
 package com.zwhzzz.Controller;
 
 import com.github.pagehelper.util.StringUtil;
-import com.zwhzzz.Pojo.Authority;
-import com.zwhzzz.Pojo.Menu;
-import com.zwhzzz.Pojo.Role;
-import com.zwhzzz.Pojo.User;
+import com.zwhzzz.Pojo.*;
 import com.zwhzzz.Service.*;
 import com.zwhzzz.Util.CpachaUtil;
 import com.zwhzzz.Util.MenuUtil;
@@ -147,6 +144,8 @@ public class systemController {
      */
     @RequestMapping("/welcome")
     public ModelAndView goWelcome(ModelAndView model){
+        Log log = logService.selectLaterAdmin();
+        model.addObject("log",log);
         model.setViewName("system/welcome");
         return model;
     }

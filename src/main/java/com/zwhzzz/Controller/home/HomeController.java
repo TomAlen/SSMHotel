@@ -71,13 +71,6 @@ public class HomeController {
         for (roomTypeDTO roomTypeDTO : cuList) {
             Cuxiao.CuxiaoPrice(roomTypeDTO);
         }
-/*
-        List<roomTypeDTO> roomTypeDTOS1 = cuList.stream().map(cu -> {
-            roomTypeDTO roomTypeDTO = new roomTypeDTO();
-            BeanUtils.copyProperties(cu,roomTypeDTO);
-            return roomTypeDTO;
-        }).collect(Collectors.toList());*/
-
         //赋值
         for (roomTypeDTO roomTypeDTO : homeListByName) {
             for (roomTypeDTO typeDTO : cuList) {
@@ -118,9 +111,9 @@ public class HomeController {
 
     /**
      * 登录
-     * @param account
-     * @param vcode
-     * @param request
+     * @param account  前端传入的要验证的客户对象
+     * @param vcode   前端传入的验证码
+     * @param request  request请求域
      * @return
      */
     @RequestMapping(value = "/login",method = RequestMethod.POST)

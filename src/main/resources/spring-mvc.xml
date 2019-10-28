@@ -12,19 +12,10 @@
 
    <!-- 自动扫描Control包-->
     <context:component-scan base-package="com.zwhzzz.Controller"/>
-
     <!--使用注解-->
     <context:annotation-config/>
-
     <mvc:annotation-driven/>
-
     <!--对静态资源的映射路径-->
-  <!--  &lt;!&ndash;jquery文件映射&ndash;&gt;
-    <mvc:resources mapping="/js/**" location="/WEB-INF/statics/js/"/>
-    &lt;!&ndash;bootstrap文件的映射&ndash;&gt;
-    <mvc:resources mapping="/css/**" location="/WEB-INF/statics/css/"/>
-    &lt;!&ndash;图片的静态资源&ndash;&gt;
-    <mvc:resources mapping="/image/**" location="/WEB-INF/statics/image/"/>-->
     <!--easyUI的资源-->
     <mvc:resources mapping="/easyui/**" location="/WEB-INF/statics/easyui/"/>
     <!--h-ui的资源-->
@@ -37,19 +28,16 @@
     <mvc:resources mapping="/echarts/**" location="/WEB-INF/statics/echarts/"/>
     <!--layui资源-->
     <mvc:resources mapping="/layui/**" location="/WEB-INF/statics/layui/"/>
-
-
-
+    <!--bootstrap资源-->
+    <mvc:resources mapping="/bootstrap/**" location="/WEB-INF/statics/bootstrap/"/>
     <!--配置视图解析器-->
     <bean id="defaultViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
         <property name="prefix" value="/WEB-INF/views/"/><!--设置JSP文件的目录位置-->
         <property name="suffix" value=".jsp"/>
     </bean>
-
     <!--将springmvc不能请求的业务交给tomcat处理-->
     <mvc:default-servlet-handler/>
-
     <!--配置拦截器-->
     <mvc:interceptors>
         <!--后台登录拦截器-->
@@ -77,5 +65,4 @@
         <!--  指定指定允许上传文件的最大值(20MB)  -->
         <property name="maxUploadSize" value="20971520"/>
     </bean>
-
 </beans>

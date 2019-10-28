@@ -61,6 +61,13 @@ public class AccountService {
         List<Account> accounts = accountDao.selectByExample(example);
         return accounts;
     }
+
+    public int updatePhoto(String filePath) {
+        Account record = new Account();
+        record.setPhoto(filePath);
+        return accountDao.updateByPrimaryKeySelective(record);
+
+    }
 }
 
 

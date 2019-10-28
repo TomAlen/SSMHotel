@@ -15,7 +15,6 @@
     <!-- 配置连接池 -->
     <!--引入数据库的数据源-->
     <!--<context:property-placeholder location="classpath:dbconfig.properties"/>-->
-
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
           destroy-method="close">
         <!-- 指定连接数据库的驱动 -->
@@ -45,6 +44,7 @@
 
     <!--开启事务注解-->
     <tx:annotation-driven transaction-manager="transactionManager"/>
+
 
     <!--配置Mybatis工厂-->
     <bean id="SqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">

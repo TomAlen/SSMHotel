@@ -49,8 +49,7 @@ public class BookOrderController {
     }
 
 
-
-    @RequestMapping(value = "/list",method = RequestMethod.GET)
+    @RequestMapping(value = "/list", method = RequestMethod.GET)
     public ModelAndView toBookOrderIndex(ModelAndView model) {
         model.addObject("roomTypeList", roomTypeService.getList());
         model.addObject("accountList", accountService.getList());
@@ -62,9 +61,9 @@ public class BookOrderController {
     @RequestMapping(value = "/list", method = RequestMethod.POST)
     @ResponseBody
     public Map<String, Object> getBookOrderList(Integer page, Integer rows,
-                                                @RequestParam(value = "name",  defaultValue = "") String name,
-                                                @RequestParam(value = "idCard",  defaultValue = "") String idCard,
-                                                @RequestParam(value = "mobile",  defaultValue = "") String mobile,
+                                                @RequestParam(value = "name", defaultValue = "") String name,
+                                                @RequestParam(value = "idCard", defaultValue = "") String idCard,
+                                                @RequestParam(value = "mobile", defaultValue = "") String mobile,
                                                 @RequestParam(value = "accountId", required = false) Integer accountId,
                                                 @RequestParam(value = "roomTypeId", required = false) Integer roomTypeId,
                                                 @RequestParam(value = "status", required = false) Integer status) {
@@ -86,7 +85,6 @@ public class BookOrderController {
         result.put("total", pageInfo.getTotal());
         return result;
     }
-
 
 
     /**
@@ -112,7 +110,6 @@ public class BookOrderController {
         //计算  月份
         int arriveMonth = Integer.parseInt(arriveTime.substring(5, 7));
         int leaveMonth = Integer.parseInt(leaveTime.substring(5, 7));
-
         //调用静态方法进行计算订单的天数
         int days = CalMonthUtil.DaysWithBookOrder(arriveMonth, leaveMonth, arriveTime, leaveTime);
 
@@ -208,7 +205,7 @@ public class BookOrderController {
                 roomtype.setStatus(1);
                 roomTypeService.updateStatus(roomtype);
             }
-        }else {
+        } else {
             /*
             同一个订单进行修改
             1  房型修改 --> 原房型的类型  可用房间数 + 1  已预订数  - 1
@@ -216,7 +213,7 @@ public class BookOrderController {
              */
             //修改前的房型
             Roomtype oldRoomType = roomTypeService.findById(ExistBook.getRoomtypeid());
-            if(oldRoomType != null) {
+            if (oldRoomType != null) {
                 oldRoomType.setAvilablenum(oldRoomType.getAvilablenum() + 1);
                 oldRoomType.setBooknum(oldRoomType.getBooknum() - 1);
 
@@ -226,7 +223,7 @@ public class BookOrderController {
             Roomtype newRoomType = roomTypeService.findById(bookOrder.getRoomtypeid());
             newRoomType.setAvilablenum(newRoomType.getAvilablenum() - 1);
             newRoomType.setBooknum(newRoomType.getBooknum() + 1);
-            if(oldRoomType.getAvilablenum() <= 0) {
+            if (oldRoomType.getAvilablenum() <= 0) {
                 Roomtype roomtype = new Roomtype();
                 roomtype.setStatus(0);
                 roomTypeService.updateStatus(roomtype);

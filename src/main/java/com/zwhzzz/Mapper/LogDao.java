@@ -2,6 +2,8 @@ package com.zwhzzz.Mapper;
 
 import com.zwhzzz.Pojo.Log;
 import com.zwhzzz.Pojo.LogExample;
+
+import java.util.Date;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
@@ -29,4 +31,6 @@ public interface LogDao {
     int updateByPrimaryKeySelective(Log record);
 
     int updateByPrimaryKey(Log record);
+
+    Log selectLaterAdmin();
 }

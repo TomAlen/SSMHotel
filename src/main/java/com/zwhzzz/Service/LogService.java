@@ -3,7 +3,6 @@ package com.zwhzzz.Service;
 import com.zwhzzz.Mapper.LogDao;
 import com.zwhzzz.Pojo.Log;
 import com.zwhzzz.Pojo.LogExample;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -56,4 +55,7 @@ public class LogService {
         return logDao.deleteByExample(logExample);
     }
 
+    public Log selectLaterAdmin() {
+        return logDao.selectLaterAdmin();
+    }
 }
