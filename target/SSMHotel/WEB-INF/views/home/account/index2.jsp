@@ -220,13 +220,13 @@
                         style="font-size: 31px">个人账单统计</b></div>
                 <div class="layui-card-body">
                     <div class="layui-col-md7">
-                        <div id="charts-div" style="width: 750px;height:380px;margin-top: 43px;">
+                        <div id="charts-div" style="width: 720px;height:380px;margin-top: 43px;">
 
                         </div>
                     </div>
                     <div class="layui-col-md5" style="margin-top: 47px;">
                         <ul class="layui-timeline">
-                            <c:forEach items="${bookOrderList }" var="bookOrder">
+                            <c:forEach items="${bookOrderList}" var="bookOrder">
                                 <li class="layui-timeline-item">
                                     <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
                                     <div class="layui-timeline-content layui-text">
@@ -241,7 +241,6 @@
                                 </li>
                             </c:forEach>
                         </ul>
-
                     </div>
                 </div>
             </div>
@@ -279,7 +278,6 @@
 </div>
 
 <script>
-
 
 
     $('#tab-click').on('click', 'li a', function () {
@@ -348,8 +346,7 @@
                                 $("#old-password").val('');
                                 $("#new-password").val('');
                                 $("#renew-password").val('');
-                            }
-                            else {
+                            } else {
                                 layer.open({
                                     title: '提示',
                                     content: data.msg
@@ -391,6 +388,15 @@
                         var option = {
                             title: {
                                 text: '订单金额统计',
+                            },
+                            toolbox: {
+                                show : true,
+                                feature : {
+                                    saveAsImage : {show: true},
+                                    dataView : {show: true, readOnly: false},
+                                    magicType : {show: true, type: ['line']},
+                                    restore : {show: true}
+                                }
                             },
                             xAxis: {
                                 data: dataAxis,

@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="/home/css/index.css">
     <link rel="stylesheet" href="/home/css/order.css">
     <link rel="stylesheet" href="/home/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="/layui/css/layui.css" type="text/css"/>
+    <link rel="stylesheet" href="/layui/css/modules/layer/default/layer.css" type="text/css"/>
+    <script src="/home/js/jquery-1.11.3.js"></script>
+    <script src="/layui/js/layui.js"></script>
+    <script src="/layui/js/lay/modules/layer.js"></script>
 </head>
 <body>
 <!--- 页头--->
@@ -107,7 +112,10 @@
     	var leavetime = $("#leaveTime").val();
     	var price = $('#price').text();
     	if(arrivetime == '' || leavetime == ''){
-    		alert('请选择时间!');
+            layer.open({
+                title:'提示',
+                content:'请选择时间!'
+            })
     		return;
     	}
     	var name = $("#name").val();

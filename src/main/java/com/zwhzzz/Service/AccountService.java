@@ -56,8 +56,6 @@ public class AccountService {
     public List<Account> getAccountById(Integer id) {
 
         AccountExample example = new AccountExample();
-        example.createCriteria()
-                .andIdEqualTo(id);
         List<Account> accounts = accountDao.selectByExample(example);
         return accounts;
     }
@@ -66,7 +64,6 @@ public class AccountService {
         Account record = new Account();
         record.setPhoto(filePath);
         return accountDao.updateByPrimaryKeySelective(record);
-
     }
 }
 

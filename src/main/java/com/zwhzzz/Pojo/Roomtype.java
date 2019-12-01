@@ -18,19 +18,19 @@ public class Roomtype implements Serializable {
 
     private Float price;
 
-    private Integer livenum;
+    private Integer livenum;//可住人数
 
-    private Integer bednum;
+    private Integer bednum;//床位数
 
-    private Integer roomnum;
+    private Integer roomnum;//房间数
 
-    private Integer avilablenum;
+    private Integer avilablenum;//可用房间数
 
-    private Integer booknum;
+    private Integer booknum;//已预订数
 
-    private Integer livednum;
+    private Integer livednum;//已入住数
 
-    private Integer status;
+    private Integer status;//状态
 
     private String remark;
 

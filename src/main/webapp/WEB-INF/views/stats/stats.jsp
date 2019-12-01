@@ -113,6 +113,4 @@
     // 基于准备好的dom，初始化echarts实例
     var myChart = echarts.init(document.getElementById('charts-div'));
     myChart.setOption(option)
-
-
 </script>

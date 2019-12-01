@@ -38,10 +38,10 @@
         </c:if>
 
         <c:if test="${account != null}">
-            <li class="layui-nav-item" style="left: 829px;">
+            <li class="layui-nav-item" style="left: 887px;">
                 <a href="../index">首页<span class="layui-badge-dot"></span></a>
             </li>
-            <li class="layui-nav-item" style="margin-left: 850px;">
+            <li class="layui-nav-item" style="margin-left: 883px;">
                 <a href="../account/index">个人中心<span class="layui-badge-dot"></span></a>
             </li>
 

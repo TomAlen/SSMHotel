@@ -244,16 +244,6 @@
         }
         return false;
     }
-	/*var existAuthority = null;
-	function  isAdded(id) {
-        for (var k=0;k<existAuthority.length;k++) {
-            if(existAuthority[k].menuId == id) {
-                return true;
-            }
-        }
-        return false;
-    }*/
-
 	
 	//判断是否有父分类
 	function haveParent(rows,parentid){
