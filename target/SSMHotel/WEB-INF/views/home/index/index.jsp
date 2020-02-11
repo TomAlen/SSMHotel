@@ -27,7 +27,7 @@
 <div id="c_header"></div>
 <!--主体内容-->
 <section>
-    <ul class="layui-nav" style="margin: 0 128px">
+    <ul class="layui-nav" style="margin: 0 159px">
         <c:if test="${account == null}">
         <li class="layui-nav-item" style="margin-left: 1030px;">
             <a href="/home/login">登录<span class="layui-badge-dot"></span></a>
@@ -38,7 +38,7 @@
         </c:if>
 
         <c:if test="${account != null}">
-        <li class="layui-nav-item" style="margin-left: 950px;">
+        <li class="layui-nav-item" style="margin-left: 940px;">
                 <a href="account/index">个人中心<span class="layui-badge-dot"></span></a>
         </li>
 

@@ -22,7 +22,7 @@
         <property name="driverClass" value="com.mysql.jdbc.Driver" />
         <!-- 指定连接数据库的URL -->
         <!--jdbc:mariadb://localhost:3306-->
-        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/SSMHotel" />
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/SSMHotel?characterEncoding=UTF-8" />
         <!-- 指定连接数据库的用户名 -->
         <property name="user" value="root" />
         <!-- 指定连接数据库的密码 -->

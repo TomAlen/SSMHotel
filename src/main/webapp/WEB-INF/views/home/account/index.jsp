@@ -41,7 +41,7 @@
 <body>
 <!--头部-->
 <div id="c_header">
-    <ul class="layui-nav" style="margin: 0 128px">
+    <ul class="layui-nav" style="margin: 0 157px">
         <c:if test="${account == null}">
             <li class="layui-nav-item" style="margin-left: 1030px;">
                 <a href="/home/login">登录<span class="layui-badge-dot"></span></a>

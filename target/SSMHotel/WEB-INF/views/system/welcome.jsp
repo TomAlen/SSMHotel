@@ -16,12 +16,12 @@
   	
   	<hr />
   	<h2>系统环境</h2>
-  	<p>系统环境：Linux</p>
+  	<p>系统环境：Windows 10</p>
 	<p>开发工具：IntelliJ IDEA 2019.1</p>
 	<p>Java版本：JDK 1.8</p>
 	<p>服务器：tomcat 8.5</p>
 	<p>数据库：MySQL</p>
-	<p>系统采用技术： Spring+SpringMVC+Mybaits+EasyUI+jQuery+Ajax+面向接口编程</p>
+	<p>系统采用技术： Spring+SpringMVC+Mybatis+EasyUI+jQuery+Ajax+面向接口编程</p>
 </div>
 </body>
 </html>

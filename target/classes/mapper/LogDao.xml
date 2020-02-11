@@ -178,7 +178,12 @@
       createTime = #{createtime,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=INTEGER}
   </update>
+
   <select id="selectLaterAdmin" resultType="com.zwhzzz.Pojo.Log">
-    select createTime from log where content  REGEXP '管理员Admin' order by createTime DESC limit 1,1;
+    select createTime
+    from log
+    where content  like '超级管理员Admin%'
+    order by createTime
+    DESC limit 1,1;
   </select>
 </mapper>

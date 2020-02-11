@@ -38,6 +38,7 @@
     </bean>
     <!--将springmvc不能请求的业务交给tomcat处理-->
     <mvc:default-servlet-handler/>
+
     <!--配置拦截器-->
     <mvc:interceptors>
         <!--后台登录拦截器-->

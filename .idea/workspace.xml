@@ -6,251 +6,51 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5cc3d300-6933-4b73-bd1f-41e8b75102d1" name="Default Changelist" comment="">
+    <list default="true" id="87e47d3f-e3f9-468a-b9b3-76dde0fc34e6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/SSMHotel.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3c2583fc-b39b-499b-afdb-10745be73603.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/generator-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zwhzzz/Controller/home/HomeAccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zwhzzz/Controller/home/HomeAccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zwhzzz/Pojo/Roomtype.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zwhzzz/Pojo/Roomtype.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zwhzzz/Service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zwhzzz/Service/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/account/book_order.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/account/book_order.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/account/index2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/account/index2.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/account/sale_book_order.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/account/sale_book_order.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Application.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Application.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/LogDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/LogDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/account/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/account/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/index/cuxiao.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/index/cuxiao.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/role/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/role/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/stats/stats.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/stats/stats.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/classes/com/zwhzzz/Controller/BookOrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/classes/com/zwhzzz/Controller/BookOrderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/classes/com/zwhzzz/Controller/home/HomeAccountController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/classes/com/zwhzzz/Controller/home/HomeAccountController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/classes/com/zwhzzz/Service/AccountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/classes/com/zwhzzz/Service/AccountService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/views/home/account/book_order.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/views/home/account/book_order.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/views/home/account/index2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/views/home/account/index2.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/views/home/account/sale_book_order.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/views/home/account/sale_book_order.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/views/home/index/cuxiao.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/views/home/index/cuxiao.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/views/role/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/views/role/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/views/stats/stats.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/views/stats/stats.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zwhzzz/Controller/BookOrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zwhzzz/Controller/BookOrderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zwhzzz/Controller/home/HomeAccountController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zwhzzz/Controller/home/HomeAccountController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zwhzzz/Service/AccountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zwhzzz/Service/AccountService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/index/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/index/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/system/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/system/welcome.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMHotel/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/classes/Application.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/classes/Application.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/classes/mapper/LogDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/classes/mapper/LogDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/classes/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/classes/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/views/system/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMHotel/WEB-INF/views/system/welcome.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Application.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Application.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/SSMHotel.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/LogDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/LogDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring-mvc.xml" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="SSMHotel@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="SSMHotel@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="SSMHotel@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="SSMHotel: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/log/list.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2116">
-              <caret line="92" column="17" selection-start-line="92" selection-start-column="17" selection-end-line="92" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zwhzzz/Controller/LogController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2047">
-              <caret line="107" column="44" selection-start-line="107" selection-start-column="44" selection-end-line="107" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/Application.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-              <folding>
-                <element signature="n#bean#2;n#beans#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mvc.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-              <folding>
-                <element signature="n#bean#0;n#beans#0;n#!!top" />
-                <element signature="n#mvc:interceptor#0;n#mvc:interceptors#0;n#beans#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zwhzzz/Controller/floorController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/menu/list.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6233">
-              <caret line="271" column="19" selection-start-line="271" selection-start-column="19" selection-end-line="271" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zwhzzz/Controller/CheckinController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="117" column="40" selection-start-line="117" selection-start-column="40" selection-end-line="117" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
+  <component name="FavoritesManager">
+    <favorites_list name="SSMHotel" />
   </component>
   <component name="FindInProjectRecents">
-    <findStrings>
-      <find>User</find>
-      <find>getusername</find>
-      <find>insertLog</find>
-      <find>Base_Column_List</find>
-      <find>select</find>
-      <find>parentId</find>
-      <find>createTime</find>
-      <find>updateByPrimaryKeySelective</find>
-      <find>insertSelective</find>
-      <find>`password`</find>
-      <find>model</find>
-      <find>idCard</find>
-      <find>`status`</find>
-      <find>uploadPhoto</find>
-      <find>delete</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>Yonghu</replace>
-      <replace>user</replace>
-      <replace>getUserName</replace>
-      <replace>getUsername</replace>
-      <replace>insertContent</replace>
-      <replace>createtime</replace>
-      <replace>password</replace>
-      <replace>modelandView</replace>
-      <replace>modelAndView</replace>
-      <replace>idcard</replace>
-      <replace>name</replace>
-      <replace>status</replace>
-    </replaceStrings>
+    <dirStrings>
+      <dir>C:\Users\zwh\.m2\repository\com\github\pagehelper\pagehelper\5.1.7\pagehelper-5.1.7.jar</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/zwhzzz/Util/Cuxiao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zwhzzz/Mapper/RoomTypeExtDao.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/RoomtypeExtDao.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zwhzzz/Controller/home/HomeAccountContoller.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zwhzzz/Service/home/RoomTypeExtService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zwhzzz/Controller/home/CuxiaoController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zwhzzz/Util/CalMonthUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zwhzzz/Controller/AccountController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zwhzzz/interceptor/admin/home/LoginInterceptor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zwhzzz/interceptor/home/LoginInterceptor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zwhzzz/Mapper/StatisticsDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zwhzzz/Util/CalStatDatas.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zwhzzz/Controller/StatesController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zwhzzz/Service/StatisticService.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/account/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zwhzzz/DTO/bookOrderDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zwhzzz/Pojo/BookOrder.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/StatisticsDao.xml" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zwhzzz/DTO/BookOrderDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zwhzzz/Service/BookOrderService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zwhzzz/Mapper/BookOrderDao.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/index/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/index/reg.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/login/css/style.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/system/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/index/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/home/css/login.css" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zwhzzz/Pojo/Account.java" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/account/list.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/BookOrderDao.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zwhzzz/Mapper/LogDao.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/LogDao.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zwhzzz/Controller/systemController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zwhzzz/Service/LogService.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/system/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/system/welcome.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/Application.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zwhzzz/Controller/home/HomeController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zwhzzz/Controller/BookOrderController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/account/book_order.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/account/sale_book_order.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/stats/stats.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/account/index2.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/index/cuxiao.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zwhzzz/Service/AccountService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zwhzzz/Pojo/Roomtype.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zwhzzz/Controller/home/HomeAccountController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/role/list.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
-      </list>
-    </option>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -260,196 +60,44 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
-      </MavenGeneralSettings>
-    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="1" />
-    <option name="y" value="43" />
-    <option name="width" value="1270" />
-    <option name="height" value="703" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="SSMHotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSMHotel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSMHotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSMHotel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSMHotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSMHotel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSMHotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSMHotel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSMHotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSMHotel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zwhzzz" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSMHotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSMHotel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zwhzzz" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSMHotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSMHotel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zwhzzz" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSMHotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSMHotel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSMHotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSMHotel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSMHotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSMHotel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSMHotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSMHotel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSMHotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-    </panes>
+  <component name="ProjectId" id="1XcEK6dGZOa2Rq1yqtWRhdWEouc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/毕设数据文件" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.4954023" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/home/images" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/login/images" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui/js" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/毕设数据文件" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/bootstrap/js" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/bootstrap/css" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/layui" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.zwhzzz.interceptor.admin.home" />
-      <recent name="com.zwhzzz.Controller" />
-      <recent name="com.zwhzzz.interceptor.admin" />
-      <recent name="com.zwhzzz.Pojo" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.zwhzzz.Service.home" />
-      <recent name="com.zwhzzz.Service" />
-    </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RunManager">
-    <configuration name="SSMHotel" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.45" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.45" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8">
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
         <artifact name="SSMHotel:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="" />
+            <option name="CONTEXT_PATH" value="/" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Tomcat_8_5_45_SSMHotel" />
-        <option name="HTTP_PORT" value="8082" />
-        <option name="JNDI_PORT" value="1094" />
+        <option name="BASE_DIRECTORY_NAME" value="Tomcat_8_5_45_SSMHotel_2" />
+        <option name="DEPLOY_TOMCAT_APPS" value="true" />
+        <option name="HTTP_PORT" value="8078" />
+        <option name="JNDI_PORT" value="1097" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -457,7 +105,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="34833" />
+        <option name="DEBUG_PORT" value="55292" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -505,17 +153,17 @@
         </SHUTDOWN>
       </ConfigurationWrapper>
       <method v="2">
-        <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="SSMHotel:war exploded" />
         </option>
+        <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.45" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/" />
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="SSMHotel:war exploded">
           <settings>
@@ -532,7 +180,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="34833" />
+        <option name="DEBUG_PORT" value="55292" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -588,175 +236,73 @@
       </method>
     </configuration>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <option name="contentProportion" value="0.10817717" />
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5cc3d300-6933-4b73-bd1f-41e8b75102d1" name="Default Changelist" comment="" />
-      <created>1569152003449</created>
+      <changelist id="87e47d3f-e3f9-468a-b9b3-76dde0fc34e6" name="Default Changelist" comment="" />
+      <created>1580620491494</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1569152003449</updated>
-      <workItem from="1569152007392" duration="7580000" />
-      <workItem from="1569209942198" duration="4088000" />
-      <workItem from="1569220375876" duration="115000" />
-      <workItem from="1569247650941" duration="1924000" />
-      <workItem from="1569287793538" duration="12835000" />
-      <workItem from="1569313059940" duration="4607000" />
-      <workItem from="1569330526961" duration="5057000" />
-      <workItem from="1569371514983" duration="5032000" />
-      <workItem from="1569392728637" duration="9456000" />
-      <workItem from="1569458813707" duration="17452000" />
-      <workItem from="1569488258079" duration="5776000" />
-      <workItem from="1569552656908" duration="15442000" />
-      <workItem from="1569631848607" duration="14334000" />
-      <workItem from="1569656613093" duration="1107000" />
-      <workItem from="1569657742823" duration="665000" />
-      <workItem from="1569658435639" duration="4579000" />
-      <workItem from="1569663046119" duration="1348000" />
-      <workItem from="1569664450586" duration="3179000" />
-      <workItem from="1569680854860" duration="1601000" />
-      <workItem from="1569715800578" duration="10945000" />
-      <workItem from="1569738102449" duration="11551000" />
-      <workItem from="1569760876450" duration="4898000" />
-      <workItem from="1569803743451" duration="9420000" />
-      <workItem from="1569839832488" duration="2937000" />
-      <workItem from="1569851005190" duration="7000" />
-      <workItem from="1569931773716" duration="965000" />
-      <workItem from="1569975837337" duration="1954000" />
-      <workItem from="1569977929887" duration="1284000" />
-      <workItem from="1569979285336" duration="185000" />
-      <workItem from="1569979503096" duration="169000" />
-      <workItem from="1569979696024" duration="981000" />
-      <workItem from="1569980700336" duration="11637000" />
-      <workItem from="1570013045798" duration="4032000" />
-      <workItem from="1570064207967" duration="3301000" />
-      <workItem from="1570157027348" duration="8000" />
-      <workItem from="1570158603393" duration="673000" />
-      <workItem from="1570263177581" duration="25000" />
-      <workItem from="1570328102926" duration="3502000" />
-      <workItem from="1570344178678" duration="7012000" />
-      <workItem from="1570410468103" duration="5935000" />
-      <workItem from="1570521613252" duration="7000" />
-      <workItem from="1570522039062" duration="3000" />
-      <workItem from="1570753166089" duration="3730000" />
-      <workItem from="1571230521617" duration="1205000" />
-      <workItem from="1572226493207" duration="1510000" />
-      <workItem from="1572246763063" duration="1167000" />
-      <workItem from="1573025518986" duration="2537000" />
-      <workItem from="1573048266291" duration="1189000" />
-      <workItem from="1573049478769" duration="176000" />
-      <workItem from="1573088818212" duration="4228000" />
-      <workItem from="1573179446332" duration="2905000" />
-      <workItem from="1573351396313" duration="27000" />
-      <workItem from="1573475933727" duration="1003000" />
-      <workItem from="1573632685381" duration="15000" />
-      <workItem from="1574128636847" duration="4436000" />
-      <workItem from="1574164352951" duration="488000" />
-      <workItem from="1574334223635" duration="609000" />
-      <workItem from="1574474268253" duration="21587000" />
-      <workItem from="1574672012718" duration="3574000" />
-      <workItem from="1574929346056" duration="3248000" />
-      <workItem from="1575166710015" duration="610000" />
+      <updated>1580620491494</updated>
+      <workItem from="1580620495226" duration="1745000" />
+      <workItem from="1580622730374" duration="2839000" />
+      <workItem from="1580626526132" duration="2245000" />
+      <workItem from="1580632713503" duration="286000" />
+      <workItem from="1580633088531" duration="1378000" />
+      <workItem from="1580634833180" duration="1405000" />
+      <workItem from="1580636486539" duration="6500000" />
+      <workItem from="1580693527689" duration="1436000" />
+      <workItem from="1580695024888" duration="2809000" />
+      <workItem from="1580700215746" duration="1297000" />
+      <workItem from="1580701585990" duration="1668000" />
+      <workItem from="1580706051435" duration="3784000" />
+      <workItem from="1580965272087" duration="204000" />
+      <workItem from="1580965508102" duration="107000" />
+      <workItem from="1580965818489" duration="562000" />
+      <workItem from="1580966438329" duration="636000" />
+      <workItem from="1581060222803" duration="2851000" />
+      <workItem from="1581328811256" duration="8000" />
+      <workItem from="1581336924842" duration="158000" />
+      <workItem from="1581337140343" duration="92000" />
+      <workItem from="1581337273800" duration="1617000" />
+      <workItem from="1581383332148" duration="2245000" />
+      <workItem from="1581385616257" duration="560000" />
+      <workItem from="1581386219996" duration="548000" />
+      <workItem from="1581386816810" duration="314000" />
+      <workItem from="1581387159318" duration="100000" />
+      <workItem from="1581387280863" duration="3945000" />
+      <workItem from="1581391691394" duration="574000" />
+      <workItem from="1581392285338" duration="5028000" />
+      <workItem from="1581398458259" duration="1868000" />
+      <workItem from="1581401211682" duration="443000" />
+      <workItem from="1581401692240" duration="3738000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="251852000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-1" y="42" width="1922" height="1039" extended-state="7" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49845678" visible="true" weight="0.16613248" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Image Layers" order="6" />
-      <window_info id="Web" order="7" sideWeight="0.5015432" side_tool="true" weight="0.21367522" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3298969" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.21645997" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.034285713" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.65050733" />
-      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.14994363" />
-      <window_info anchor="bottom" id="Spring" order="8" weight="0.6918671" />
-      <window_info anchor="bottom" id="Database Console" order="9" weight="0.10996564" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.22497188" />
-      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.32875144" />
-      <window_info anchor="bottom" id="Database Changes" order="14" weight="0.32875144" />
-      <window_info anchor="bottom" id="Version Control" order="15" weight="0.4712514" />
-      <window_info anchor="bottom" id="Messages" order="16" weight="0.13942857" />
-      <window_info anchor="right" id="Preview" order="0" weight="0.32976446" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Palette" order="5" />
-      <window_info anchor="right" id="JSF" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="CDI" order="8" />
-      <window_info anchor="right" id="Database" order="9" weight="0.016025642" />
-      <window_info anchor="right" id="Palette&#9;" order="10" />
-      <window_info anchor="right" id="Theme Preview" order="11" />
-      <window_info anchor="right" id="Bean Validation" order="12" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49845678" weight="0.19551282" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Image Layers" order="6" />
-      <window_info id="Web" order="7" sideWeight="0.5015432" side_tool="true" weight="0.21367522" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3298969" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.03382187" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.034285713" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.65050733" />
-      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.14994363" />
-      <window_info anchor="bottom" id="Spring" order="8" weight="0.6918671" />
-      <window_info anchor="bottom" id="Database Console" order="9" weight="0.10996564" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.22609673" />
-      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.32875144" />
-      <window_info anchor="bottom" id="Database Changes" order="14" weight="0.32875144" />
-      <window_info anchor="bottom" id="Version Control" order="15" weight="0.47193587" />
-      <window_info anchor="bottom" id="Messages" order="16" weight="0.13942857" />
-      <window_info anchor="right" id="Preview" order="0" weight="0.32976446" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Palette" order="5" />
-      <window_info anchor="right" id="JSF" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="CDI" order="8" />
-      <window_info anchor="right" id="Database" order="9" visible="true" weight="0.016025642" />
-      <window_info anchor="right" id="Palette&#9;" order="10" />
-      <window_info anchor="right" id="Theme Preview" order="11" />
-      <window_info anchor="right" id="Bean Validation" order="12" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -767,519 +313,120 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
+              <option name="COLUMN_ORDER" />
             </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list />
-          </value>
-        </entry>
-        <entry key="User">
-          <value>
-            <list />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
-  <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
-        <watch expression="result" />
-      </configuration>
-    </watches-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zwhzzz/Pojo/AccountExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14743">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#746#747#0" expanded="true" />
-            <element signature="e#781#782#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zwhzzz/Controller/home/CuxiaoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="43" column="9" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
-          <folding>
-            <element signature="e#737#738#0" expanded="true" />
-            <element signature="e#797#798#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/account/book_order.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="143" column="64" selection-start-line="143" selection-start-column="64" selection-end-line="143" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/statics/echarts/js/echarts.common.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="21" column="261048" lean-forward="true" selection-start-line="21" selection-start-column="261048" selection-end-line="21" selection-end-column="261048" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/stats/stats.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="56" column="25" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/index/cuxiao.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/account/sale_book_order.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="66" selection-start-line="14" selection-start-column="66" selection-end-line="14" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zwhzzz/Controller/AccountController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/index/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="53" column="22" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zwhzzz/interceptor/admin/LoginInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zwhzzz/Mapper/FloorDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zwhzzz/Mapper/CheckinnDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zwhzzz/Mapper/BookOrderDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zwhzzz/Mapper/AuthorityDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zwhzzz/Mapper/AccountDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-47">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.16.20/lombok-1.16.20.jar!/lombok/Data.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="9" column="44" lean-forward="true" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zwhzzz/Pojo/Account.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zwhzzz/Pojo/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="14" column="27" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zwhzzz/Pojo/Room.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zwhzzz/Pojo/BookOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zwhzzz/Pojo/Checkinn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zwhzzz/Pojo/Floor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zwhzzz/Pojo/Roomtype.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zwhzzz/Controller/home/HomeAccountController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="201" column="9" lean-forward="true" selection-start-line="201" selection-start-column="9" selection-end-line="201" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zwhzzz/Controller/home/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2990">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/account/index2.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="378" column="62" lean-forward="true" selection-start-line="378" selection-start-column="62" selection-end-line="378" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.1.RELEASE/spring-webmvc-4.3.1.RELEASE.jar!/org/springframework/web/servlet/ModelAndView.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="112" column="24" selection-start-line="112" selection-start-column="24" selection-end-line="112" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zwhzzz/Controller/systemController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="134" column="47" lean-forward="true" selection-start-line="134" selection-start-column="47" selection-end-line="134" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zwhzzz/Util/MenuUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="32" column="28" lean-forward="true" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/system/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1058">
-          <caret line="100" column="40" lean-forward="true" selection-start-line="100" selection-start-column="40" selection-end-line="100" selection-end-column="40" />
-          <folding>
-            <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/system/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1334">
-          <caret line="14" column="72" selection-start-line="14" selection-start-column="72" selection-end-line="14" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3174" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/role/list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="345" column="17" lean-forward="true" selection-start-line="345" selection-start-column="17" selection-end-line="345" selection-end-column="17" />
-          <folding>
-            <element signature="e#83#89#0" expanded="true" />
-            <element signature="e#89#95#0" expanded="true" />
-            <element signature="e#95#101#0" expanded="true" />
-            <element signature="e#101#107#0" expanded="true" />
-            <element signature="e#107#113#0" expanded="true" />
-            <element signature="e#113#119#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zwhzzz/Util/CalMonthUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zwhzzz/Controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="222" lean-forward="true" selection-start-line="222" selection-end-line="222" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zwhzzz/Controller/RoomTypeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="73" column="49" selection-start-line="73" selection-start-column="49" selection-end-line="73" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zwhzzz/Controller/BookOrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="100" column="32" lean-forward="true" selection-start-line="100" selection-start-column="32" selection-end-line="100" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/checkin/list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="654" column="22" lean-forward="true" selection-start-line="654" selection-start-column="22" selection-end-line="654" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zwhzzz/Util/CpachaUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-414">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zwhzzz/Util/CalStatDatas.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-101">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zwhzzz/Service/AccountService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="31" column="20" lean-forward="true" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
-          <folding>
-            <element signature="e#903#904#0" expanded="true" />
-            <element signature="e#961#962#0" expanded="true" />
-            <element signature="e#1010#1011#0" expanded="true" />
-            <element signature="e#1059#1060#0" expanded="true" />
-            <element signature="e#1109#1110#0" expanded="true" />
-            <element signature="e#1179#1180#0" expanded="true" />
-            <element signature="e#1223#1224#0" expanded="true" />
-            <element signature="e#1279#1280#0" expanded="true" />
-            <element signature="e#1317#1318#0" expanded="true" />
-            <element signature="e#1388#1389#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zwhzzz/Controller/StatesController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zwhzzz/Service/AuthorityService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
-          <folding>
-            <element signature="e#1195#1196#0" expanded="true" />
-            <element signature="e#1248#1249#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/log/list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2116">
-          <caret line="92" column="17" selection-start-line="92" selection-start-column="17" selection-end-line="92" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zwhzzz/Controller/LogController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2047">
-          <caret line="107" column="44" selection-start-line="107" selection-start-column="44" selection-end-line="107" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Application.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-          <folding>
-            <element signature="n#bean#2;n#beans#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-          <folding>
-            <element signature="n#bean#0;n#beans#0;n#!!top" />
-            <element signature="n#mvc:interceptor#0;n#mvc:interceptors#0;n#beans#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zwhzzz/Controller/floorController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/menu/list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6233">
-          <caret line="271" column="19" selection-start-line="271" selection-start-column="19" selection-end-line="271" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zwhzzz/Controller/CheckinController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="117" column="40" selection-start-line="117" selection-start-column="40" selection-end-line="117" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state x="171" y="40" key="#Custom_Plugin_Repositories" timestamp="1581388060200">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="171" y="40" key="#Custom_Plugin_Repositories/0.0.1536.824@0.0.1536.824" timestamp="1581388060200" />
+    <state x="171" y="40" key="#HTTP_Proxy" timestamp="1581399582260">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="171" y="40" key="#HTTP_Proxy/0.0.1536.824@0.0.1536.824" timestamp="1581399582260" />
+    <state x="360" y="71" key="#Tomcat_Server" timestamp="1581337395862">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="360" y="71" key="#Tomcat_Server/0.0.1536.824@0.0.1536.824" timestamp="1581337395862" />
+    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581401322984">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1581401322984" />
+    <state x="548" y="153" key="FileChooserDialogImpl" timestamp="1581402527973">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="548" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1581402527973" />
+    <state width="1045" height="106" key="GridCell.Tab.0.bottom" timestamp="1581406101378">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1045" height="106" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581406101378" />
+    <state width="1045" height="106" key="GridCell.Tab.0.center" timestamp="1581406101378">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1045" height="106" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1581406101378" />
+    <state width="1045" height="106" key="GridCell.Tab.0.left" timestamp="1581406101377">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1045" height="106" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1581406101377" />
+    <state width="1045" height="106" key="GridCell.Tab.0.right" timestamp="1581406101378">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1045" height="106" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1581406101378" />
+    <state width="1045" height="106" key="GridCell.Tab.1.bottom" timestamp="1581406101379">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1045" height="106" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581406101379" />
+    <state width="1045" height="106" key="GridCell.Tab.1.center" timestamp="1581406101378">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1045" height="106" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1581406101378" />
+    <state width="1045" height="106" key="GridCell.Tab.1.left" timestamp="1581406101378">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1045" height="106" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1581406101378" />
+    <state width="1045" height="106" key="GridCell.Tab.1.right" timestamp="1581406101378">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1045" height="106" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1581406101378" />
+    <state width="1045" height="106" key="GridCell.Tab.2.bottom" timestamp="1581406101379">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1045" height="106" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581406101379" />
+    <state width="1045" height="106" key="GridCell.Tab.2.center" timestamp="1581406101379">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1045" height="106" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1581406101379" />
+    <state width="1045" height="106" key="GridCell.Tab.2.left" timestamp="1581406101379">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1045" height="106" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1581406101379" />
+    <state width="1045" height="106" key="GridCell.Tab.2.right" timestamp="1581406101379">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1045" height="106" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1581406101379" />
+    <state width="1045" height="106" key="GridCell.Tab.3.bottom" timestamp="1581406101379">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1045" height="106" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581406101379" />
+    <state width="1045" height="106" key="GridCell.Tab.3.center" timestamp="1581406101379">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1045" height="106" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1581406101379" />
+    <state width="1045" height="106" key="GridCell.Tab.3.left" timestamp="1581406101379">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1045" height="106" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1581406101379" />
+    <state width="1045" height="106" key="GridCell.Tab.3.right" timestamp="1581406101379">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1045" height="106" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1581406101379" />
+    <state x="80" y="24" key="SettingsEditor" timestamp="1581401652949">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="80" y="24" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1581401652949" />
+    <state x="461" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1581401702871">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="461" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1581401702871" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1581390499906">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1581390499906" />
+    <state x="491" y="324" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1581384218597">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="491" y="324" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1536.824@0.0.1536.824" timestamp="1581384218597" />
   </component>
   <component name="masterDetails">
     <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8.0_221</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.4954023" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>SSMHotel</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.4954023" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
       <state key="ProjectJDKs.UI">
         <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
